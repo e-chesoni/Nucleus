@@ -5,8 +5,12 @@ import {
   FaLinkedin,
   FaYoutubeSquare,
 } from "react-icons/fa";
-import magneto from "../../public/magneto.jpeg";
-import bemo from "../../public/bemo.jpeg";
+import magneto from "../assets/magneto.jpeg";
+import bemo from "../assets/bemo.jpeg";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { NavBar } from '@/components/NavBar';
 
 export default function Home() {
   return (
@@ -15,16 +19,8 @@ export default function Home() {
         <title>Elaine Chesoni Portfolio</title>
       </Head>
       <main className='px-10 bg-gradient-to-b from-slate-900 to-orange-800'>
-        
         <section>
-        <nav className='p-10 flex justify-between'>
-            <h1>Home</h1>
-            <ul className='flex items-center'>
-              <li className='px-4'>Professional</li>
-              <li className='px-4'>Fun</li>
-              <li className='px-4'>Resume</li>
-            </ul>
-          </nav>
+          <NavBar />
         </section>
         
         <div><p>Begin /&gt;</p></div>
