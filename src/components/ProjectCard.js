@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const ProjectCard = ({ category, title, imgUrl, what, how, why }) => {
   return (
-    <Col size={12} sm={6} md={4}>
+    <Col >
       <div className='shadow-lg p-10 rounded-xl my-10 flex-1'>
               <h1>{category}</h1>
               <h2 className='text-center'>{title}</h2>
