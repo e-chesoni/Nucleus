@@ -25,6 +25,7 @@ export default function Home() {
       </Head>
       <main className='bg-gradient-to-b from-slate-900 to-orange-800'>
         <NavBar/>
+        <div className='timeline'></div>
         <Hero/>
         <Projects/>
         <About/>

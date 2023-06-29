@@ -68,10 +68,6 @@ body {
   letter-spacing: 2px;
 }
 
-.timeline-text {
-  color: #809EAF !important;
-}
-
 /************** Nav Bar CSS **************/
 
 .navbar-toggler,
@@ -165,6 +161,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
+}
+
+/************** Timeline CSS **************/
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline-text {
+  color: #809EAF !important;
 }
 
 /************** Hero CSS **************/
