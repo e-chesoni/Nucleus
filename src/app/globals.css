@@ -16,6 +16,15 @@
   }
 }
 
+/************** Custom Fonts **************/
+
+@font-face {
+  font-family: RobotoMono;
+  src: url(../assets/fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+/************** Default CSS **************/
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -25,7 +34,10 @@ body {
     )
     rgb(var(--background-start-rgb));
   color: #fff !important;
+  font-family: 'RobotoMono' !important;
 }
+
+/************** Nav Bar CSS **************/
 
 .navbar-toggler,
 .navbar-toggler:focus,
@@ -119,3 +131,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+
+/************** Hero CSS **************/
+
+
+
+/************** Project Card CSS **************/
+
+
+
+/************** Projects CSS **************/
+
+
+
+/************** Details CSS **************/
+
+
