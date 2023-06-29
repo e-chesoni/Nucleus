@@ -11,8 +11,8 @@ export const Hero = () => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = [ "Embedded Systems", "Controls", "PCB Design" ];
-    const period = 2000;
+    const toRotate = [ "Embedded Systems", "Control Systems", "Printed Circuit Boards" ];
+    const period = 1000;
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -55,17 +55,17 @@ export const Hero = () => {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <div><p>Begin /&gt;</p></div>
+                                    <div className="py-10 timeline-text"><p>&lt;Begin/&gt;</p></div>
 
                                     <div className='min-h-screen grid content-center'>
 
-                                        <div className='grid content-center '>
-                                          <h2>Hi, my name is Elaine Chesoni</h2>
+                                        <div className='intro grid content-center '>
+                                          <h2><span className="sentence-start">Hi</span><span>, my name is <span className="name">Elaine Chesoni</span></span></h2>
                                           <div>
-                                            <h2>I design and develop<span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Embedded Systems", "Controls", "PCB Design" ]'> <span className="wrap">{text}</span> </span></h2>
+                                            <h2><span className="sentence-start">I</span> <span className="design">design</span> and <span className="develop">develop</span><span className="txt-rotate" period="1000" data-rotate='[ "Embedded Systems", "Control Systems", "Printed Circuit Boards" ]'> <span className="wrap">{text}</span> </span></h2>
                                           </div>
                                         </div>
-                                        <div><p>Let me show you...</p></div>
+                                        <div className="timeline-text"><p>Let me show you...</p></div>
 
                                     </div>
                                 </div>

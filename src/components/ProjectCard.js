@@ -1,19 +1,13 @@
 import { Col } from "react-bootstrap";
 import Image from 'next/image'
 
-export const ProjectCard = ({ category, title, imgUrl, what, how, why }) => {
+export const ProjectCard = ({ category, title, imgUrl, tagline, what, how, why }) => {
   return (
-    <Col >
-      <div className='shadow-lg p-10 rounded-xl my-10 flex-1'>
-              <h1>{category}</h1>
+    <Col>
+      <div className='p-10 rounded-xl my-10 flex-1'>
               <h2 className='text-center'>{title}</h2>
               <div className='text-center'>
-                <h5>What?</h5>
-                <p>{what}</p>
-                <h5>How?</h5>
-                <p>{how}</p>
-                <h5>Why?</h5>
-                <p>{why}</p>
+                <p>{tagline}</p>
               </div>
               <div>
                 <Image 

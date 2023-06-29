@@ -13,6 +13,7 @@ export const Projects = () => {
             category: "Embedded Systems",
             title: "Magneto",
             imgUrl: magneto,
+            tagline: "magneto tagline",
             what: "Pokem ipsum dolor sit amet Poison Sting Misty Raichu Elekid make it double Mineral Badge.",
             how: "Ice Klinklang S.S. Anne Palkia grumpy old man who needs coffee Igglybuff the enemy Pokemon fainted.",
             why: "S.S. Anne Dig Ash Ketchum Skarmory Cryogonal Weedle Snivy.",
@@ -21,6 +22,7 @@ export const Projects = () => {
             category: "Embedded Systems",
             title: "Another Project",
             imgUrl: magneto,
+            tagline: "another project tagline",
             what: "Some different stuff",
             how: "In a different way",
             why: "Because it was fun",
@@ -29,6 +31,7 @@ export const Projects = () => {
             category: "Controls",
             title: "BEM-0",
             imgUrl: bemo,
+            tagline: "bem-o tagline",
             what: "Hydro Pump you're not wearing shorts Blizzard Slowking searching far and wide Burnt Berry Ninetales.",
             how: "Boulder Badge Grumpig Rotom Hippowdon Ninjask Flamethrower Muk.",
             why: "Misty Pachirisu Dragon Zangoose Skorupi Armaldo Manectric.",
@@ -36,24 +39,24 @@ export const Projects = () => {
     ];
 
     return (
-        <section className="project" id="project">
+        <section className="projects" id="projects">
             <Container>
                 <Row>
-                    <Col>
+                    <Col className="project">
                         <TrackVisibility>
                             {({ isVisible }) => 
                             <div className={isVisible ? "animate_animated animate__fadeIn": ""}>
-                                <h2>Projects</h2>
+                                <div className="py-10 timeline-text"><p>&lt;Projects/&gt;</p></div>
                                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                         <Nav.Item>
-                                        <Nav.Link eventKey="embedded">Embedded Systems</Nav.Link>
+                                        <Nav.Link className="project-nav-link" eventKey="embedded">Embedded Systems</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
-                                        <Nav.Link eventKey="controls">Controls</Nav.Link>
+                                        <Nav.Link className="project-nav-link" eventKey="controls">Control Systems</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
-                                        <Nav.Link eventKey="pcb">PCB Design</Nav.Link>
+                                        <Nav.Link className="project-nav-link" eventKey="pcb">Printed Circuit Boards</Nav.Link>
                                         </Nav.Item>
                                     </Nav>
                                     <Tab.Content>

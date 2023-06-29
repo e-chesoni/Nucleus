@@ -23,6 +23,15 @@
   src: url(../assets/fonts/RobotoMono-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: RobotoMonoBold;
+  src: url(../assets/fonts/static/RobotoMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: RobotoMonoItalic;
+  src: url(../assets/fonts/static/RobotoMono-LightItalic.ttf);
+}
 /************** Default CSS **************/
 
 body {
@@ -35,6 +44,32 @@ body {
     rgb(var(--background-start-rgb));
   color: #fff !important;
   font-family: 'RobotoMono' !important;
+}
+
+.intro {
+  font-variant: small-caps;
+}
+
+.sentence-start {
+  font-size: xx-large;
+}
+
+.name {
+  font-family: 'RobotoMonoBold' !important;
+  color: #1887C7;
+}
+
+.design, .develop {
+  font-family: 'RobotoMonoItalic';
+  font-variant: normal;
+}
+
+.develop {
+  letter-spacing: 2px;
+}
+
+.timeline-text {
+  color: #809EAF !important;
 }
 
 /************** Nav Bar CSS **************/
@@ -78,7 +113,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: red;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -136,13 +171,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 
-/************** Project Card CSS **************/
-
-
-
 /************** Projects CSS **************/
 
+.project-nav-link {
+  color: #809EAF !important;
+}
 
+.project-nav-link.active {
+  color: #fff !important;
+  background: #1887C7 !important;
+}
+
+/************** Project Card CSS **************/
+
+.project {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+}
 
 /************** Details CSS **************/
 
