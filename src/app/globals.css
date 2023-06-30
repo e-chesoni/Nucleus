@@ -46,9 +46,14 @@ body {
   font-family: 'RobotoMono' !important;
 }
 
-.main-bg {
+.bg-main-top {
   background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(#010013, #461704);
+  /* background-image: linear-gradient(#010013, #461704); */
+  background-image: linear-gradient(#010013, #12154C);
+}
+
+.bg-main-bottom {
+  background-image: linear-gradient(#12154C, #461704);
 }
 
 .intro {
@@ -182,7 +187,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .timeline-text {
-  color: #809EAF !important;
+  color: #FF5400 !important;
 }
 
 .design-section {
@@ -190,7 +195,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   padding: 0;
 }
 
@@ -223,25 +227,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media screen and (min-width: 300px) {
   .timeline {
     display: grid;
-    grid-template-columns: 0.01fr 3px 1fr;
+    grid-template-columns: 0.01fr 2px 1fr;
   }
   .timeline-middle {
-    position: relative;
-    background-image: linear-gradient(45deg, #809EAF, #809EAF, #809EAF);
-    width: 3px;
+    position: absolute;
+    background-image: linear-gradient(45deg, #FF5400, #FF5400, #FF5400);
+    width: 1px;
     height: 100%;
   }
   .main-middle {
     opacity: 0;
   }
   .timeline-circle {
-    position: absolute;
     top: 0;
     left: 50%;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background-image: linear-gradient(45deg, #809EAF, #809EAF, #809EAF);
+    border: 2px solid #FF5400;
+    /* background-image: linear-gradient(45deg, #FF5400, #FF5400, #FF5400); */
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -265,7 +269,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************** Project Card CSS **************/
 
 .shadow {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+  background-image: linear-gradient(to bottom, rgba(54,58,55,0.2), rgba(54,58,55,0.5));
 }
 
 /************** Details CSS **************/

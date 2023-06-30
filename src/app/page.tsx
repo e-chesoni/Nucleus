@@ -19,34 +19,91 @@ export default function Home() {
       <Head>
         <title>Elaine Chesoni Portfolio</title>
       </Head>
-      <main className='main-bg '>
-        <NavBar/>
+      <main className='bg-main-top'>
+        <div>
+          <NavBar/>
 
-        {/* <Projects/> */}
-        {/* <About/> */}
-        {/* <Contact/> */}
+          {/* <About/> */}
+          {/* <Contact/> */}
 
-        <section className="design-section">
-          <div className="timeline">
-            <div className="timeline-middle">
-              <div className="timeline-circle"></div>
+
+
+          <section className="design-section">
+            <div className="timeline">
+              <div className="mt-2 timeline-circle"></div>
+              <div className="mt-4 timeline-middle"></div>
+              <div className="timeline-component timeline-content">
+                <div className="timeline-text"><p>&lt;Begin/&gt;</p></div>
+                <Hero/>
+              </div>
             </div>
-            <div className="timeline-component timeline-content">
-              <div className="timeline-text"><p>&lt;Begin/&gt;</p></div>
-              <Hero/>
+          </section>
+
+          <section className="design-section shadow">
+            {/* For spacing at the top of timeline section */}
+            <div className="timeline">
+              <div className="timeline-middle">
+              </div>
+              <div className="timeline-component timeline-content">
+                <div className='py-3'></div>
+              </div>
             </div>
-          </div>
-          <div className="timeline shadow">
-            <div className="timeline-middle">
-              <div className="timeline-circle"></div>
+            {/* Projects */}
+            <div className="timeline">
+              <div className="mt-1.5 timeline-circle"></div>
+              <div className="mt-4 timeline-middle"></div>
+              <div className="timeline-component timeline-content">
+                <div className="timeline-text"><p>&lt;Projects/&gt;</p></div>
+                <Projects/>
+              </div>
             </div>
-            <div className="timeline-component timeline-content">
-              <div className="timeline-text"><p>&lt;Projects/&gt;</p></div>
-              <Projects/>
+          </section>
+
+          <section className="design-section shadow">
+            {/* For spacing at the top of timeline section */}
+            <div className="timeline">
+              <div className="timeline-middle">
+              </div>
+              <div className="timeline-component timeline-content">
+                <div className='py-3'></div>
+              </div>
             </div>
-          </div>
-        </section>
-        <Footer/>
+            {/* Projects */}
+            <div className="timeline">
+              <div className="mt-1.5 timeline-circle"></div>
+              <div className="mt-4 timeline-middle"></div>
+              <div className="timeline-component timeline-content">
+                <div className="timeline-text"><p>&lt;About/&gt;</p></div>
+                <About/>
+              </div>
+            </div>
+          </section>
+
+          <section className="design-section shadow">
+            {/* For spacing at the top of timeline section */}
+            <div className="timeline">
+              <div className="timeline-middle">
+              </div>
+              <div className="timeline-component timeline-content">
+                <div className='py-3'></div>
+              </div>
+            </div>
+            {/* Projects */}
+            <div className="timeline">
+              <div className="mt-1.5 timeline-circle"></div>
+              <div className="mt-4 timeline-middle"></div>
+              <div className="timeline-component timeline-content">
+                <div className="timeline-text"><p>&lt;Contact/&gt;</p></div>
+                <Contact/>
+              </div>
+            </div>
+          </section>
+
+        </div>
+        <div className='bg-main-bottom'>
+          <Footer/>
+        </div>
+        
       </main>
     </div>
     
