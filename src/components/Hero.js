@@ -62,7 +62,7 @@ export const Hero = () => {
                                         <div className='intro grid content-center '>
                                           <h2><span className="sentence-start">Hi</span><span>, my name is <span className="name">Elaine Chesoni</span></span></h2>
                                           <div>
-                                            <h2><span className="sentence-start">I</span> <span className="design">design</span> and <span className="develop">develop</span><span className="txt-rotate" period="1000" data-rotate='[ "Embedded Systems", "Control Systems", "Printed Circuit Boards" ]'> <span className="wrap">{text}</span> </span></h2>
+                                            <h2><span className="sentence-start">I</span> <span className="design-text">design</span> and <span className="develop-text">develop</span><span className="txt-rotate" period="1000" data-rotate='[ "Embedded Systems", "Control Systems", "Printed Circuit Boards" ]'> <span className="wrap">{text}</span> </span></h2>
                                           </div>
                                         </div>
                                         <div className="timeline-text"><p>Let me show you...</p></div>
