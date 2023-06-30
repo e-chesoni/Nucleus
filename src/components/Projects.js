@@ -39,14 +39,13 @@ export const Projects = () => {
     ];
 
     return (
-        <section className="projects" id="projects">
+        <section>
             <Container>
                 <Row>
-                    <Col className="project">
+                    <Col>
                         <TrackVisibility>
                             {({ isVisible }) => 
                             <div className={isVisible ? "animate_animated animate__fadeIn": ""}>
-                                <div className="py-10 timeline-text"><p>&lt;Projects/&gt;</p></div>
                                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                         <Nav.Item>

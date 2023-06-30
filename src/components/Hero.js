@@ -55,7 +55,6 @@ export const Hero = () => {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <div className="py-10 timeline-text"><p>&lt;Begin/&gt;</p></div>
 
                                     <div className='min-h-screen grid content-center'>
 
