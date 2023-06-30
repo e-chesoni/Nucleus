@@ -42,7 +42,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  color: #fff !important;
+  color: #809EAF !important;
   font-family: 'RobotoMono' !important;
 }
 
@@ -56,12 +56,17 @@ body {
 
 .name {
   font-family: 'RobotoMonoBold' !important;
-  color: #1887C7;
+  color: #fff !important;
 }
 
 .design-text, .develop-text {
   font-family: 'RobotoMonoItalic' !important;
   font-variant: normal;
+  color: #fff !important;
+}
+
+.changing-text {
+  color: #fff;
 }
 
 .develop {

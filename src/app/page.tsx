@@ -19,7 +19,7 @@ export default function Home() {
       <Head>
         <title>Elaine Chesoni Portfolio</title>
       </Head>
-      <main className='bg-gradient-to-b from-slate-900 to-orange-800'>
+      <main className='bg-gradient-to-b from-slate-900 to-orange-950'>
         <NavBar/>
 
         {/* <Projects/> */}
