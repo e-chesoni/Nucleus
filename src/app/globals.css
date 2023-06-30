@@ -272,6 +272,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-image: linear-gradient(to bottom, rgba(54,58,55,0.2), rgba(54,58,55,0.5));
 }
 
+/************** About CSS **************/
+
+.progress {
+  background: #809EAF !important;
+}
+
+.bg-custom-progress-bar {
+  background-color: #FF5400 !important;
+}
+
+/************** Contact Me CSS **************/
+
+
+
 /************** Details CSS **************/
 
 
