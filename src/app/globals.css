@@ -46,6 +46,11 @@ body {
   font-family: 'RobotoMono' !important;
 }
 
+.main-bg {
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#010013, #461704);
+}
+
 .intro {
   font-variant: small-caps;
 }
