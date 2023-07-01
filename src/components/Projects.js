@@ -3,6 +3,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import magneto from "../assets/img/magneto.jpeg";
+import magneto1 from "../assets/img/magneto1.svg";
 import bemo from "../assets/img/bemo.jpeg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -12,7 +13,7 @@ export const Projects = () => {
         {
             category: "Embedded Systems",
             title: "Magneto",
-            imgUrl: magneto,
+            imgUrl: magneto1,
             tagline: "magneto tagline",
             what: "Pokem ipsum dolor sit amet Poison Sting Misty Raichu Elekid make it double Mineral Badge.",
             how: "Ice Klinklang S.S. Anne Palkia grumpy old man who needs coffee Igglybuff the enemy Pokemon fainted.",
@@ -21,7 +22,7 @@ export const Projects = () => {
         {
             category: "Embedded Systems",
             title: "Another Project",
-            imgUrl: magneto,
+            imgUrl: magneto1,
             tagline: "another project tagline",
             what: "Some different stuff",
             how: "In a different way",
