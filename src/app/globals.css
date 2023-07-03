@@ -16,6 +16,48 @@
   }
 }
 
+/************** Color Paletts **************/
+/* Figma */
+
+
+
+/* Palette 2 */
+.palette-2 {
+  background-color: #023047;
+}
+
+.bg-blue {
+  background-color: #27AAE0;
+}
+
+.dark-blue {
+  background-color: #33678F ;
+}
+
+.medium-blue {
+  background-color: #29ADE8;
+}
+
+.light-blue {
+  background-color: #3FBEE9 ;
+}
+
+.bg-orange {
+  background-color: #F79624;
+}
+
+.dark-orange {
+  background-color: #E76C16;
+}
+
+.medium-orange {
+  background-color: #F39727;
+}
+
+.light-orange {
+  background-color: #F8BF70;
+}
+
 /************** Custom Fonts **************/
 
 @font-face {
@@ -46,15 +88,27 @@ body {
   font-family: 'RobotoMono' !important;
 }
 
-.bg-main-top {
-  background-color: red; /* For browsers that do not support gradients */
-  /* background-image: linear-gradient(#010013, #461704); */
+/* Figma Colors Start */
+.bg-main-top1 {
+  background-color: #010013; /* For browsers that do not support gradients */
   background-image: linear-gradient(#010013, #12154C);
 }
 
-.bg-main-bottom {
+.bg-main-bottom1 {
   background-image: linear-gradient(#12154C, #461704);
 }
+/* Figma Colors End */
+
+/* Palette 2 Colors Start */
+.bg-main-top {
+  background-color: #152238; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#152238, #192841);
+}
+
+.bg-main-bottom {
+  background-image: linear-gradient(#192841, #461704);
+}
+/* Palette 2 Colors End */
 
 .intro {
   font-variant: small-caps;
@@ -186,9 +240,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto;
 }
 
-.timeline-text {
+/* Figma Colors Start */
+.timeline-text1 {
   color: #FF5400 !important;
 }
+/* Figma Colors End */
+
+/* Palette 2 Colors Start */
+.timeline-text {
+  color: #E76C16 !important;
+}
+/* Palette 2 Colors End */
 
 .design-section {
   display: flex;
@@ -229,15 +291,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     display: grid;
     grid-template-columns: 0.01fr 2px 1fr;
   }
-  .timeline-middle {
-    position: absolute;
-    background-image: linear-gradient(45deg, #FF5400, #FF5400, #FF5400);
-    width: 1px;
-    height: 100%;
-  }
+  
   .main-middle {
     opacity: 0;
   }
+
+  /* Figma Colors Start */
+  .timeline-middle {
+    position: absolute;
+    background-image: linear-gradient(45deg, #E76C16, #E76C16, #E76C16);
+    width: 1px;
+    height: 100%;
+  }
+
   .timeline-circle {
     top: 0;
     left: 50%;
@@ -245,10 +311,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     height: 10px;
     border-radius: 50%;
     border: 2px solid #FF5400;
-    /* background-image: linear-gradient(45deg, #FF5400, #FF5400, #FF5400); */
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+  /* Figma Colors End */
+
+  /* Palette 2 Colors Start */
+  .timeline-middle {
+    position: absolute;
+    background-image: linear-gradient(45deg, #E76C16, #E76C16, #E76C16);
+    width: 1px;
+    height: 100%;
+  }
+
+  .timeline-circle {
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #FF5400;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  /* Palette 2 Colors End */
+
 }
 
 /************** Hero CSS **************/
@@ -257,14 +344,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************** Projects CSS **************/
 
-.project-nav-link {
+/* Figma Colors Start */
+.project-nav-link1 {
   color: #809EAF !important;
+}
+
+.project-nav-link.active1 {
+  color: #fff !important;
+  background: #1887C7 !important;
+}
+/* Figma Colors End */
+
+/* Palette 2 Colors Start */
+.project-text {
+  color: #fff;
+}
+
+.project-nav-link {
+  color: #29ADE8 !important;
 }
 
 .project-nav-link.active {
   color: #fff !important;
-  background: #1887C7 !important;
+  background: #29ADE8 !important;
 }
+/* Palette 2 Colors End */
 
 /************** Project Card CSS **************/
 
@@ -279,11 +383,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 500;
   object-fit: cover;
   border-radius: 0.5em !important;
-  overflow: hidden;
-  background: #C04848;  /* fallback for old browsers */
-  background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("../assets/img/magneto1.svg");  /* Chrome 10-25, Safari 5.1-6 */
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 /************** About CSS **************/
 
@@ -291,9 +390,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #809EAF !important;
 }
 
+/* Figma Colors Start */
 .bg-custom-progress-bar {
   background-color: #FF5400 !important;
 }
+/* Figma Colors Start */
+
+/* Palette 2 Colors Start */
+.bg-custom-progress-bar {
+  background-color: #E76C16 !important;
+}
+/* Palette 2 Colors Start */
 
 /************** Contact Me CSS **************/
 
