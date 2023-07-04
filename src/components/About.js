@@ -4,7 +4,7 @@ import { Container, Col, Row, Tab, Nav } from "react-bootstrap";
 import { Skill } from "./Skill";
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
-import { ProjectCard } from "./ProjectCarousel";
+import { ProjectCard } from "./ProjectCard";
 import magneto from "../assets/img/magneto.jpeg";
 import bemo from "../assets/img/bemo.jpeg";
 import 'animate.css';

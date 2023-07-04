@@ -289,7 +289,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media screen and (min-width: 300px) {
   .timeline {
     display: grid;
-    grid-template-columns: 0.01fr 2px 1fr;
+    grid-template-columns: 2px 1fr;
+    margin: 0;
   }
   
   .main-middle {
@@ -370,7 +371,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /* Palette 2 Colors End */
 
+.projects-col.col {
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+}
+
 /************** Project Card CSS **************/
+
+.project-card-container {
+  background: red;
+}
 
 .shadow {
   background-image: linear-gradient(to bottom, rgba(54,58,55,0.2), rgba(54,58,55,0.5));
@@ -384,6 +395,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   object-fit: cover;
   border-radius: 0.5em !important;
 }
+
 /************** About CSS **************/
 
 .progress {
