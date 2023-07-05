@@ -22,7 +22,7 @@ export default function Home() {
       <main className='bg-main-top'>
         <div>
           <NavBar/>
-          
+
           <section className="design-section">
             <div className="timeline">
               <div className="mt-2 timeline-circle"></div>
@@ -42,22 +42,21 @@ export default function Home() {
               </div>
             </div>
             {/* Projects */}
-            <div className="relative">
-              <div className="flex">
-              <div className="mt-1.5 ml-10 timeline-circle projects-timeline-circle"></div>
-              <div className="timeline-text-container pt-0"><p>&lt;Projects/&gt;</p></div>
+            <div className="timeline m-0 p-0">
+              <div className="mt-1.5 timeline-circle"></div>
+              <div className="timeline-component timeline-content m-0 p-0">
+                <div className="timeline-text-container pt-0"><p>&lt;Projects/&gt;</p></div>
               </div>
-              <div className="timeline-component timeline-content">
-                <Projects/>
-              </div>
+            </div>
+            <div>
+              <Projects/>
             </div>
           </section>
 
           <section className="design-section">
             {/* For spacing at the top of timeline section */}
             <div className="timeline">
-              <div className="timeline-middle">
-              </div>
+              <div className="timeline-middle"></div>
               <div className="timeline-component timeline-content">
                 <div className='py-3'></div>
               </div>
@@ -76,8 +75,7 @@ export default function Home() {
           <section className="design-section">
             {/* For spacing at the top of timeline section */}
             <div className="timeline">
-              <div className="timeline-middle">
-              </div>
+              <div className="timeline-middle"></div>
               <div className="timeline-component timeline-content">
                 <div className='py-3'></div>
               </div>
