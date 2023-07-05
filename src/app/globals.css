@@ -315,10 +315,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   /* Figma Colors End */
 
-  .projects-timeline-circle {
-    
-  }
-
   /* Palette 2 Colors Start */
   .timeline-middle {
     position: absolute;
@@ -380,9 +376,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************** Project Card CSS **************/
 
+.nav-pills {
+  min-height: 10vh;
+}
+
 .project-card-container {
   background: #023047;
   border-radius: 5px;
+  min-height: 80vh;
 }
 
 .project-card-header {
