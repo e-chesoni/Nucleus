@@ -22,10 +22,7 @@ export default function Home() {
       <main className='bg-main-top'>
         <div>
           <NavBar/>
-
-          {/* <About/> */}
-          {/* <Contact/> */}
-
+          
           <section className="design-section">
             <div className="timeline">
               <div className="mt-2 timeline-circle"></div>
@@ -37,19 +34,17 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="design-section shadow">
+          <section className="design-section">
             {/* For spacing at the top of timeline section */}
             <div className="timeline">
-              <div className="timeline-middle">
-              </div>
               <div className="timeline-component timeline-content">
-                <div className='py-3'></div>
+                <div className='timeline-spacer pt-4'></div>
               </div>
             </div>
             {/* Projects */}
             <div className="relative">
               <div className="flex">
-              <div className="mt-1.5 ml-10 timeline-circle"></div>
+              <div className="mt-1.5 ml-10 timeline-circle projects-timeline-circle"></div>
               <div className="timeline-text-container pt-0"><p>&lt;Projects/&gt;</p></div>
               </div>
               <div className="timeline-component timeline-content">
@@ -58,7 +53,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="design-section shadow">
+          <section className="design-section">
             {/* For spacing at the top of timeline section */}
             <div className="timeline">
               <div className="timeline-middle">
@@ -78,7 +73,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="design-section shadow">
+          <section className="design-section">
             {/* For spacing at the top of timeline section */}
             <div className="timeline">
               <div className="timeline-middle">
@@ -99,12 +94,8 @@ export default function Home() {
           </section>
 
         </div>
-        <div className='bg-main-bottom'>
-          <Footer/>
-        </div>
-        
+        <Footer/>
       </main>
     </div>
-    
   )
 }

@@ -6,29 +6,48 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import Image from 'next/image'
 
-import magneto from "../assets/img/magneto.jpeg";
-import magneto1 from "../assets/img/magneto1.svg";
-import magneto_printing from "../assets/img/magneto-printing.jpg";
-import magneto_helment from "../assets/img/magneto_helment.svg";
-import car from "../assets/img/car.svg";
-import bemo from "../assets/img/bemo.jpeg";
-import bemo_side from "../assets/img/bem01-side.jpeg";
+// Backgrounds
+import magneto from "../assets/img/background/magneto/magneto.jpeg";
+import magneto1 from "../assets/img/background/magneto/magneto1.svg";
+import magneto_printing from "../assets/img/background/magneto/magneto-printing.jpg";
 
+import bemo from "../assets/img/background/bemo/bemo.jpeg";
+import bemo_side from "../assets/img/background/bemo/bem01-side.jpeg";
+import bemo_desk_original from "../assets/img/background/bemo/chris-obrist-9X1VJKrz1lU-unsplash.jpg";
+import bemo_components_original from "../assets/img/background/bemo/robin-glauser-aSvBypuXGkc-unsplash.jpg";
+import bemo_testing_original from "../assets/img/background/bemo/tim-kabel-FCrYdP8gohg-unsplash.jpg";
+import bemo_desk from "../assets/img/background/bemo/desk-gradient.png";
+import bemo_components from "../assets/img/background/bemo/components-gradient.png";
+import bemo_testing from "../assets/img/background/bemo/bemo-testing-gradient.png";
 
-import altium from "../assets/img/altium-skill.svg";
-import aws from "../assets/img/aws-skill.svg";
-import c from "../assets/img/c-skill.svg";
-import circuit from "../assets/img/circuit-skill.svg";
-import cpp from "../assets/img/cpp-skill.svg";
-import csharp from "../assets/img/c-sharp-skill.svg";
-import java from "../assets/img/java-skill.svg";
-import javascript from "../assets/img/javascript-skill.svg";
-import python from "../assets/img/python-skill.svg";
-import solder from "../assets/img/solder-skill.svg";
-import solidworks from "../assets/img/solidworks-skill.svg";
-import typescript from "../assets/img/typescript-skill.svg";
-import vscode from "../assets/img/vs-code-skill.svg";
-import vs from "../assets/img/vs-skill.svg";
+import pcb from "../assets/img/background/pcb/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg";
+
+import code from "../assets/img/background/other/christopher-gower-m_HRfLhgABo-unsplash.jpg";
+
+// Icons
+import car from "../assets/img/icon/car.svg";
+import car_white from "../assets/img/icon/car-white.svg";
+import magneto_helment from "../assets/img/icon/magneto_helment.svg";
+import magneto_helment_white from "../assets/img/icon/magneto-helment-white.svg";
+import bike_white from "../assets/img/icon/bike-white.svg";
+import fish_white from "../assets/img/icon/fish-white.svg";
+import cloud_white from "../assets/img/icon/cloud-white.svg";
+
+// Skills
+import altium from "../assets/img/skill/altium-skill.svg";
+import aws from "../assets/img/skill/aws-skill.svg";
+import c from "../assets/img/skill/c-skill.svg";
+import circuit from "../assets/img/skill/circuit-skill.svg";
+import cpp from "../assets/img/skill/cpp-skill.svg";
+import csharp from "../assets/img/skill/c-sharp-skill.svg";
+import java from "../assets/img/skill/java-skill.svg";
+import javascript from "../assets/img/skill/javascript-skill.svg";
+import python from "../assets/img/skill/python-skill.svg";
+import solder from "../assets/img/skill/solder-skill.svg";
+import solidworks from "../assets/img/skill/solidworks-skill.svg";
+import typescript from "../assets/img/skill/typescript-skill.svg";
+import vscode from "../assets/img/skill/vs-code-skill.svg";
+import vs from "../assets/img/skill/vs-skill.svg";
 
 
 export const Projects = () => {
@@ -78,8 +97,8 @@ export const Projects = () => {
                 {
                     title: "bemo",
                     tagline: "first tagline",
-                    imgUrl: bemo_side,
-                    iconUrl: car,
+                    imgUrl: bemo_desk,
+                    iconUrl: car_white,
                     skills: [ 
                         {
                             skillUrl: cpp,
@@ -99,8 +118,8 @@ export const Projects = () => {
                 {
                     title: "second",
                     tagline: "second tagline",
-                    imgUrl: bemo,
-                    iconUrl: car,
+                    imgUrl: bemo_components,
+                    iconUrl: car_white,
                     skills: [ 
                         {
                             skillUrl: csharp,
@@ -118,7 +137,7 @@ export const Projects = () => {
                     title: "magneto",
                     tagline: "third tagline",
                     imgUrl: magneto_printing,
-                    iconUrl: magneto_helment,
+                    iconUrl: magneto_helment_white,
                     skills: [ 
                         {
                             skillUrl: csharp,
@@ -138,8 +157,8 @@ export const Projects = () => {
                 {
                     title: "fourth",
                     tagline: "fourth tagline",
-                    imgUrl: magneto,
-                    iconUrl: magneto_helment,
+                    imgUrl: code,
+                    iconUrl: magneto_helment_white,
                     skills: [ 
                         {
                             skillUrl: csharp,
@@ -156,8 +175,8 @@ export const Projects = () => {
                 {
                     title: "fifth",
                     tagline: "third tagline",
-                    imgUrl: magneto1,
-                    iconUrl: magneto_helment,
+                    imgUrl: pcb,
+                    iconUrl: magneto_helment_white,
                     skills: [ 
                         {
                             skillUrl: csharp,

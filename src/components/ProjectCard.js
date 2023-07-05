@@ -1,12 +1,7 @@
 import { Container, Col, Row } from "react-bootstrap";
 import Image from 'next/image'
 
-import magneto from "../assets/img/magneto.jpeg";
-import magneto1 from "../assets/img/magneto1.svg";
-import magneto_helment from "../assets/img/magneto_helment.svg";
-import car from "../assets/img/car.svg";
-import bemo from "../assets/img/bemo.jpeg";
-import csharp from "../assets/img/c-sharp-skill.svg";
+
 
 export const ProjectCard = ({group, projects}) => {
 
@@ -15,46 +10,48 @@ export const ProjectCard = ({group, projects}) => {
       {
         projects.map((project, index) => {
           return (
-            <Container className="project-card-container my-5 py-5">
+            <Container className="project-card-container mb-5">
               <Col className="project-card-col">
-                <Row className="project-card-header">
-                  <Row className="project-card-header-img row-span-1">
+                <Row className="project-card-header img-gradient">
                     <Image
-                      className=""
+                      className="project-card-header-img"
                       src={project.imgUrl}
                       alt="img alt"
+                      style={{alignSelf: 'center'}}
                     />
-                  </Row>
-                  <Row className="project-card-header-icon">
-                    <Image
-                      className="h-20 w-20"
-                      src={project.iconUrl}
-                      alt="img alt"
-                    />
-                  </Row>
                 </Row>
-                <Row className="project-card-title">
-                  <h5>{project.title}</h5>
-                  <p className="project-card-tagline">{project.tagline}</p>
-                </Row>
-                <Row className="project-card-skills">
-                  {
-                    project.skills.map((skill, index) => {
-                        return (
-                          <Col>
-                            <Image
-                              className="d-block h-20 w-20"
-                              src={skill.skillUrl}
-                              alt="alt"
-                            />
-                          </Col>
-                        )
-                      
-                    })
-                  }
-                </Row>
-                <Row className="project-card-description">
-                  <p>{project.description}</p>
+                <Row className="project-card-description-container">
+                  <Col>
+                    <Row className="project-card-header-icon-row">
+                      <Image
+                        className="project-card-header-icon h-20 w-20"
+                        src={project.iconUrl}
+                        alt="img alt"
+                      />
+                    </Row>
+                    <Row className="project-card-title">
+                      <h5>{project.title}</h5>
+                      <p className="project-card-tagline">{project.tagline}</p>
+                    </Row>
+                    <Row className="project-card-skills">
+                      {
+                        project.skills.map((skill, index) => {
+                            return (
+                              <Col>
+                                <Image
+                                  className="d-block h-20 w-20"
+                                  src={skill.skillUrl}
+                                  alt="alt"
+                                />
+                              </Col>
+                            )
+                        })
+                      }
+                    </Row>
+                    <Row className="project-card-description">
+                      <p>{project.description}</p>
+                    </Row>
+                  </Col>
                 </Row>
               </Col>
             </Container>
