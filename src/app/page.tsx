@@ -26,14 +26,12 @@ export default function Home() {
           {/* <About/> */}
           {/* <Contact/> */}
 
-
-
           <section className="design-section">
             <div className="timeline">
               <div className="mt-2 timeline-circle"></div>
               <div className="mt-4 timeline-middle"></div>
               <div className="timeline-component timeline-content">
-                <div className="timeline-text"><p>&lt;Begin/&gt;</p></div>
+                <div className="timeline-text-container"><p>&lt;Begin/&gt;</p></div>
                 <Hero/>
               </div>
             </div>
@@ -49,11 +47,12 @@ export default function Home() {
               </div>
             </div>
             {/* Projects */}
-            <div className="timeline">
-              <div className="mt-1.5 timeline-circle"></div>
-              <div className="mt-4 timeline-middle"></div>
+            <div className="relative">
+              <div className="flex">
+              <div className="mt-1.5 ml-10 timeline-circle"></div>
+              <div className="timeline-text-container pt-0"><p>&lt;Projects/&gt;</p></div>
+              </div>
               <div className="timeline-component timeline-content">
-                <div className="timeline-text"><p>&lt;Projects/&gt;</p></div>
                 <Projects/>
               </div>
             </div>
@@ -68,12 +67,12 @@ export default function Home() {
                 <div className='py-3'></div>
               </div>
             </div>
-            {/* Projects */}
+            {/* About */}
             <div className="timeline">
               <div className="mt-1.5 timeline-circle"></div>
               <div className="mt-4 timeline-middle"></div>
               <div className="timeline-component timeline-content">
-                <div className="timeline-text"><p>&lt;About/&gt;</p></div>
+                <div className="timeline-text-container"><p>&lt;About/&gt;</p></div>
                 <About/>
               </div>
             </div>
@@ -88,12 +87,12 @@ export default function Home() {
                 <div className='py-3'></div>
               </div>
             </div>
-            {/* Projects */}
+            {/* Contact */}
             <div className="timeline">
               <div className="mt-1.5 timeline-circle"></div>
               <div className="mt-4 timeline-middle"></div>
               <div className="timeline-component timeline-content">
-                <div className="timeline-text"><p>&lt;Contact/&gt;</p></div>
+                <div className="timeline-text-container"><p>&lt;Contact/&gt;</p></div>
                 <Contact/>
               </div>
             </div>

@@ -178,7 +178,7 @@ export const Projects = () => {
                         <TrackVisibility>
                             {({ isVisible }) => 
                             <div className={isVisible ? "animate_animated animate__fadeIn": ""}>
-                                <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                                <Tab.Container id="projects-tabs" defaultActiveKey="embedded">
                                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                         <Nav.Item>
                                         <Nav.Link className="project-nav-link" eventKey="embedded">Embedded Systems</Nav.Link>
