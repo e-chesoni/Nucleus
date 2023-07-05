@@ -51,44 +51,6 @@ import vs from "../assets/img/skill/vs-skill.svg";
 
 
 export const Projects = () => {
-    const projects = [
-        {
-            category: "Embedded Systems",
-            title: "Magneto",
-            imgUrl: magneto_helment,
-            tagline: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-            what: "Pokem ipsum dolor sit amet Poison Sting Misty Raichu Elekid make it double Mineral Badge.",
-            how: "Ice Klinklang S.S. Anne Palkia grumpy old man who needs coffee Igglybuff the enemy Pokemon fainted.",
-            why: "S.S. Anne Dig Ash Ketchum Skarmory Cryogonal Weedle Snivy.",
-        },
-        {
-            category: "Embedded Systems",
-            title: "Another Project",
-            imgUrl: magneto_helment,
-            tagline: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-            what: "Some different stuff",
-            how: "In a different way",
-            why: "Because it was fun",
-        },
-        {
-            category: "Controls",
-            title: "BEM-0",
-            imgUrl: car,
-            tagline: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-            what: "Hydro Pump you're not wearing shorts Blizzard Slowking searching far and wide Burnt Berry Ninetales.",
-            how: "Boulder Badge Grumpig Rotom Hippowdon Ninjask Flamethrower Muk.",
-            why: "Misty Pachirisu Dragon Zangoose Skorupi Armaldo Manectric.",
-        },
-        {
-            category: "Controls",
-            title: "Second Controls Project",
-            imgUrl: car,
-            tagline: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-            what: "Hydro Pump you're not wearing shorts Blizzard Slowking searching far and wide Burnt Berry Ninetales.",
-            how: "Boulder Badge Grumpig Rotom Hippowdon Ninjask Flamethrower Muk.",
-            why: "Misty Pachirisu Dragon Zangoose Skorupi Armaldo Manectric.",
-        },
-    ];
 
     const categories = [
         {
@@ -113,7 +75,7 @@ export const Projects = () => {
                             skillAlt: "solder tile"
                         },
                     ],
-                    description: "Pokem ipsum dolor sit amet Poison Sting Misty Raichu Elekid make it double Mineral Badge.",
+                    description: "Pokem ipsum dolor sit amet Deino Tympole Palpitoad Earthquake Regice Croconaw. Rock the enemy Pokemon fainted Goldeen Growl Earth Badge Magby Nincada. Fire Regigigas Luvdisc what kind of Pokemon are you Walrein Bibarel Teddiursa.",
                 },
                 {
                     title: "second",
@@ -126,7 +88,7 @@ export const Projects = () => {
                             skillAlt: "c-sharp tile"
                         },
                     ],
-                    description: "Hydro Pump you're not wearing shorts Blizzard Slowking searching far and wide Burnt Berry Ninetales.",
+                    description: "Dig Venomoth Rising Badge Rhydon Hoenn Combusken Solosis. Pokemon like no one ever was Slowpoke Meloetta Druddigon Phanpy Hoppip. Pokemon Rhyhorn Carracosta Aron Terrakion Fire Stunky. Venusaur Blastoise Unfezant Nidoking Emboar Galvantula Earthquake. Flying Accelgor Lopunny Furret Purugly Kecleon consectetur adipisicing elit",
                 },
             ]
         },
@@ -152,7 +114,7 @@ export const Projects = () => {
                             skillAlt: "solidworks tile"
                         }
                     ],
-                    description: "Boulder Badge Grumpig Rotom Hippowdon Ninjask Flamethrower Muk.",
+                    description: "Strength Musharna Sonic Boom Swoobat Duskull Shaymin Deino. Fire Stoutland Giovanni Gothorita Tranquill deserunt mollit Normal. Ut aliquip ex ea commodo consequat Blitzle Totodile Stunky Typhlosion Sewaddle Goldeen. Fuchsia City Graveler Fighting in a world we must defend Chikorita.",
                 },
                 {
                     title: "fourth",
@@ -165,7 +127,7 @@ export const Projects = () => {
                             skillAlt: "c-sharp tile"
                         }
                     ],
-                    description: "Ice Klinklang S.S. Anne Palkia grumpy old man who needs coffee Igglybuff the enemy Pokemon fainted.",
+                    description: "Blastoise Mareep Slowpoke Tyrogue incididunt ut labore Magikarp used Splash bicycle. Ut enim ad minim veniam Golem Hypno Purugly Slakoth Darmanitan Mint Berry. Velit esse cillum dolore eu fugiat nulla pariatur Mareep Pachirisu Cerulean City Fire Red Rotom Grumpig.",
                 },
             ]
         },
@@ -183,7 +145,7 @@ export const Projects = () => {
                             skillAlt: "c-sharp tile"
                         }
                     ],
-                    description: "S.S. Anne Dig Ash Ketchum Skarmory Cryogonal Weedle Snivy.",
+                    description: "Rainbow Badge Numel Strength Tranquill Registeel Herdier Seel. Poison Nincada Simisage Delibird Chimecho Ninetales Oshawott. Strength Rapidash Plain Badge Gliscor Oshawott Surskit Magikarp. Electric Pewter City Electabuzz Clamperl Electrike Celadon City Hydreigon.",
                 },
             ]
         }

@@ -141,7 +141,7 @@ export const About = () => {
                             {({ isVisible }) => 
                             <div className={isVisible ? "animate_animated animate__fadeIn": ""}>
                                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                                    <Nav variant="pills" className="nav-pills mb-3 justify-content-center align-items-center" id="pills-tab">
                                         <Nav.Item>
                                         <Nav.Link className="project-nav-link" eventKey="languages">Languages</Nav.Link>
                                         </Nav.Item>
@@ -152,57 +152,51 @@ export const About = () => {
                                         <Nav.Link className="project-nav-link" eventKey="tools">Programs & Tools</Nav.Link>
                                         </Nav.Item>
                                     </Nav>
-                                    <Tab.Content>
+                                    <Tab.Content className="skills-container">
                                         <Tab.Pane eventKey="languages">
-                                            <Col>
-                                                {
-                                                    skills.map((skill, index) => {
-                                                        if (skill.type === 'language')
-                                                        {
-                                                            return (
-                                                                <Skill
-                                                                    key={index}
-                                                                    {...skill}
-                                                                    />
-                                                                )
-                                                        } 
-                                                    })
-                                                }
-                                            </Col>
+                                            {
+                                                skills.map((skill, index) => {
+                                                    if (skill.type === 'language')
+                                                    {
+                                                        return (
+                                                            <Skill
+                                                                key={index}
+                                                                {...skill}
+                                                                />
+                                                            )
+                                                    } 
+                                                })
+                                            }
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="frameworks">
-                                            <Col>
-                                                {
-                                                    skills.map((skill, index) => {
-                                                        if (skill.type === 'framework')
-                                                        {
-                                                            return (
-                                                                <Skill
-                                                                    key={index}
-                                                                    {...skill}
-                                                                    />
-                                                                )
-                                                        } 
-                                                    })
-                                                }
-                                            </Col>
+                                            {
+                                                skills.map((skill, index) => {
+                                                    if (skill.type === 'framework')
+                                                    {
+                                                        return (
+                                                            <Skill
+                                                                key={index}
+                                                                {...skill}
+                                                                />
+                                                            )
+                                                    } 
+                                                })
+                                            }
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="tools">
-                                            <Col>
-                                                {
-                                                    skills.map((skill, index) => {
-                                                        if (skill.type === 'tool')
-                                                        {
-                                                            return (
-                                                                <Skill
-                                                                    key={index}
-                                                                    {...skill}
-                                                                    />
-                                                                )
-                                                        } 
-                                                    })
-                                                }
-                                            </Col>
+                                            {
+                                                skills.map((skill, index) => {
+                                                    if (skill.type === 'tool')
+                                                    {
+                                                        return (
+                                                            <Skill
+                                                                key={index}
+                                                                {...skill}
+                                                                />
+                                                            )
+                                                    } 
+                                                })
+                                            }
                                         </Tab.Pane>
                                     </Tab.Content>
                                 </Tab.Container>

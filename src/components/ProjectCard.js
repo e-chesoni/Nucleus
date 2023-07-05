@@ -1,7 +1,8 @@
 import { Container, Col, Row } from "react-bootstrap";
 import Image from 'next/image'
+import Button from 'react-bootstrap/Button';
 
-
+import { NucleusButton } from "./NucleusButton";
 
 export const ProjectCard = ({group, projects}) => {
 
@@ -29,7 +30,7 @@ export const ProjectCard = ({group, projects}) => {
                         alt="img alt"
                       />
                     </Row>
-                    <Row className="project-card-title">
+                    <Row className="project-card-header-text">
                       <h5>{project.title}</h5>
                       <p className="project-card-tagline">{project.tagline}</p>
                     </Row>
@@ -50,6 +51,9 @@ export const ProjectCard = ({group, projects}) => {
                     </Row>
                     <Row className="project-card-description">
                       <p>{project.description}</p>
+                    </Row>
+                    <Row className="project-button-row">
+                      <NucleusButton/>
                     </Row>
                   </Col>
                 </Row>

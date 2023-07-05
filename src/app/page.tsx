@@ -83,7 +83,6 @@ export default function Home() {
             {/* Contact */}
             <div className="timeline">
               <div className="mt-1.5 timeline-circle"></div>
-              <div className="mt-4 timeline-middle"></div>
               <div className="timeline-component timeline-content">
                 <div className="timeline-text-container"><p>&lt;Contact/&gt;</p></div>
                 <Contact/>

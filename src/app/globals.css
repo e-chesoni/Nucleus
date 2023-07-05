@@ -383,12 +383,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project-card-container {
   background: #023047;
   border-radius: 5px;
-  min-height: 80vh;
+  max-height: 75vh;
+  min-height: 75vh;
 }
 
-.project-card-header {
-  display: flex;
-  flex-direction: column;
+.project-card-header-text {
+  color: white;
 }
 
 img.project-card-header-img {
@@ -399,8 +399,29 @@ img.project-card-header-img {
 
 .project-card-description-container {
   position: relative;
-  top: -200px;
+  top: -210px;
   padding: 20px;
+}
+
+.project-card-description {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.project-button-container {
+  display: flex;
+}
+
+button.project-button.btn.btn-primary {
+  border: none;
+  background-color: #29ADE8;
+  outline: none !important;
+  outline-offset: none !important;
+}
+
+div.projects-col.col {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .shadow {
@@ -408,6 +429,11 @@ img.project-card-header-img {
 }
 
 /************** About CSS **************/
+
+.skills-container {
+  min-height: 50vh;
+  max-height: 50vh;
+}
 
 .progress {
   background: #809EAF !important;
