@@ -17,9 +17,6 @@
 }
 
 /************** Color Paletts **************/
-/* Figma */
-
-
 
 /* Palette 2 */
 /* THIS IS JUST A REFERENCE--YOU MUST CHANGE COLORS BELOW */
@@ -49,7 +46,7 @@
 }
 
 .dark-orange {
-  background-color: #E76C16;
+  background-color: #FF5400;
 }
 
 .medium-orange {
@@ -90,20 +87,8 @@ body {
   font-family: 'RobotoMono' !important;
 }
 
-/* Figma Colors Start */
-.bg-main-top1 {
-  background-color: #010013; /* For browsers that do not support gradients */
-  background-image: linear-gradient(#010013, #12154C);
-}
-
-.bg-main-bottom1 {
-  background-image: linear-gradient(#12154C, #461704);
-}
-/* Figma Colors End */
-
 /* Palette 2 Colors Start */
 .bg-main-top {
-  background-color: red; /* For browsers that do not support gradients */
   background-color: #051015;
   /* background-image: linear-gradient(#152238, #192841); */
 }
@@ -138,6 +123,14 @@ body {
 
 /************** Nav Bar CSS **************/
 
+nav.navbar.navbar-expand-lg.navbar-light {
+  padding-top: 20px;
+}
+
+.navbar-brand-inner-text{
+  color: #fff;
+}
+
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -148,7 +141,7 @@ body {
 }
 
 .navbar-link {
-  color: #fff !important;
+  color: #FF5400 !important;
 }
 
 .navbar-text button {
@@ -162,9 +155,11 @@ body {
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
+
 .navbar-text button span {
   z-index: 1;
 }
+
 .navbar-text button::before {
   content: "";
   width: 0%;
@@ -176,20 +171,24 @@ body {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
+
 .navbar-text button:hover {
   color: red;
 }
+
 .navbar-text button:hover::before {
 	content: "";
 	width: 100%;
 	height: 100%;
 	position: absolute;
 }
+
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
     box-shadow: none;
 }
+
 nav.navbar .navbar-toggler-icon {
   width: 24px;
   height: 19px;
@@ -199,9 +198,11 @@ nav.navbar .navbar-toggler-icon {
   transition: all 300ms linear;
   top: -2px;
 }
+
 nav.navbar .navbar-toggler-icon:focus {
 	border-bottom: 2px solid #fff;
 }
+
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
 	width: 24px;
@@ -214,21 +215,37 @@ nav.navbar .navbar-toggler-icon:before {
 	z-index: 2;
 	transition: all 300ms linear;
 }
+
 nav.navbar .navbar-toggler-icon:after {
 	top: 8px;
 }
+
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 	transform: rotate(45deg);
 	background-color: #fff;
 	height: 2px;
 }
+
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 	transform: translateY(8px) rotate(-45deg);
 	background-color: #fff;
 	height: 2px;
 }
+
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
+}
+
+/************** Home CSS **************/
+
+.heading-spacer {
+  min-height: 35vh;
+  max-height: 35vh;
+}
+
+.home-container {
+  min-height: 65vh;
+  max-height: 65vh;
 }
 
 /************** Timeline CSS **************/
@@ -238,16 +255,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   max-width: 1200px;
 }
 
-/* Figma Colors Start */
-.timeline-text1 {
-  color: #FF5400 !important;
-}
-/* Figma Colors End */
-
 /* Palette 2 Colors Start */
 .timeline-text-container {
-  color: #E76C16 !important;
+  color: #FF5400 !important;
   padding-left: 10px;
+}
+
+.timeline-text {
+  color: #FF5400 !important;
 }
 
 .timeline-text-text {
@@ -295,30 +310,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     opacity: 0;
   }
 
-  /* Figma Colors Start */
-  .timeline-middle {
-    position: absolute;
-    background-image: linear-gradient(45deg, #E76C16, #E76C16, #E76C16);
-    width: 1px;
-    height: 100%;
-  }
-
-  .timeline-circle {
-    top: 0;
-    left: 50%;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 2px solid #FF5400;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  /* Figma Colors End */
-
   /* Palette 2 Colors Start */
   .timeline-middle {
     position: absolute;
-    background-image: linear-gradient(45deg, #E76C16, #E76C16, #E76C16);
+    background-image: linear-gradient(45deg, #FF5400, #FF5400, #FF5400);
     width: 1px;
     height: 100%;
   }
@@ -339,20 +334,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************** Hero CSS **************/
 
-
+.hero {
+  padding-left: 10px;
+}
 
 /************** Projects CSS **************/
-
-/* Figma Colors Start */
-.project-nav-link1 {
-  color: #809EAF !important;
-}
-
-.project-nav-link.active1 {
-  color: #fff !important;
-  background: #1887C7 !important;
-}
-/* Figma Colors End */
 
 /* Palette 2 Colors Start */
 .project-text {
@@ -433,21 +419,25 @@ div.projects-col.col {
 .skills-container {
   min-height: 50vh;
   max-height: 50vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.skill-progress-bar-container {
+  padding-bottom: 20px;
+}
+
+.skill-title {
+
 }
 
 .progress {
   background: #809EAF !important;
 }
 
-/* Figma Colors Start */
-.bg-custom-progress-bar {
-  background-color: #FF5400 !important;
-}
-/* Figma Colors Start */
-
 /* Palette 2 Colors Start */
 .bg-custom-progress-bar {
-  background-color: #E76C16 !important;
+  background-color: #FF5400 !important;
 }
 /* Palette 2 Colors Start */
 

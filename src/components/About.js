@@ -140,7 +140,7 @@ export const About = () => {
                         <TrackVisibility>
                             {({ isVisible }) => 
                             <div className={isVisible ? "animate_animated animate__fadeIn": ""}>
-                                <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                                <Tab.Container id="projects-tabs" defaultActiveKey="languages">
                                     <Nav variant="pills" className="nav-pills mb-3 justify-content-center align-items-center" id="pills-tab">
                                         <Nav.Item>
                                         <Nav.Link className="project-nav-link" eventKey="languages">Languages</Nav.Link>

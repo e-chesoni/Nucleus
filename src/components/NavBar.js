@@ -27,14 +27,14 @@ export const NavBar = () => {
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
-                <Navbar.Brand href="#/"></Navbar.Brand>
+                <Navbar.Brand className="navbar-link" href="#/">&lt;<span className="navbar-brand-inner-text">e-chesoni</span>/&gt;</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse>
                   <Nav className="navbar-text me-auto">
-                    <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                    <Nav.Link href="#professional" className={activeLink === 'professional' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('professional')}>Professional</Nav.Link>
-                    <Nav.Link href="#fun" className={activeLink === 'fun' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('fun')}>Fun</Nav.Link>
-                    <Nav.Link href="#resume" className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('resume')}>Resume</Nav.Link>
+                    <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>&lt;Home/&gt;</Nav.Link>
+                    <Nav.Link href="#professional" className={activeLink === 'professional' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('professional')}>&lt;Professional/&gt;</Nav.Link>
+                    <Nav.Link href="#fun" className={activeLink === 'fun' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('fun')}>&lt;Fun/&gt;</Nav.Link>
+                    <Nav.Link href="#resume" className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('resume')}>&lt;Resume/&gt;</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
             </Container>

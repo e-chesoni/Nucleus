@@ -9,7 +9,8 @@ import Image from 'next/image'
 // Backgrounds
 import magneto from "../assets/img/background/magneto/magneto.jpeg";
 import magneto1 from "../assets/img/background/magneto/magneto1.svg";
-import magneto_printing from "../assets/img/background/magneto/magneto-printing.jpg";
+import magneto_printing_original from "../assets/img/background/magneto/magneto-printing.jpg";
+import magneto_printing from "../assets/img/background/magneto/magneto-printing-gradient.png";
 
 import bemo from "../assets/img/background/bemo/bemo.jpeg";
 import bemo_side from "../assets/img/background/bemo/bem01-side.jpeg";
@@ -20,9 +21,11 @@ import bemo_desk from "../assets/img/background/bemo/desk-gradient.png";
 import bemo_components from "../assets/img/background/bemo/components-gradient.png";
 import bemo_testing from "../assets/img/background/bemo/bemo-testing-gradient.png";
 
-import pcb from "../assets/img/background/pcb/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg";
+import pcb_original from "../assets/img/background/pcb/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg";
+import pcb from "../assets/img/background/pcb/pcb-gradient.png";
 
-import code from "../assets/img/background/other/christopher-gower-m_HRfLhgABo-unsplash.jpg";
+import code_original from "../assets/img/background/other/christopher-gower-m_HRfLhgABo-unsplash.jpg";
+import code from "../assets/img/background/other/code-gradient.png";
 
 // Icons
 import car from "../assets/img/icon/car.svg";

@@ -55,17 +55,14 @@ export const Hero = () => {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-
-                                    <div className='min-h-screen grid content-center'>
-
-                                        <div className='intro grid content-center '>
+                                    <div className='home-container'>
+                                        <div className='intro'>
                                           <h2><span className="sentence-start">Hi</span><span>, my name is <span className="name">Elaine Chesoni</span></span></h2>
                                           <div>
                                             <h2><span className="sentence-start">I</span> <span className="design-text">design</span> and <span className="develop-text">develop</span><span className="txt-rotate" period="1000" data-rotate='[ "Embedded Systems", "Control Systems", "Printed Circuit Boards" ]'> <span className="wrap changing-text">{text}</span> </span></h2>
                                           </div>
                                         </div>
                                         <div className="timeline-text"><p>Let me show you...</p></div>
-
                                     </div>
                                 </div>
                             }

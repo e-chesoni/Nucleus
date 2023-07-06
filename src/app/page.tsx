@@ -22,7 +22,7 @@ export default function Home() {
       <main className='bg-main-top'>
         <div>
           <NavBar/>
-
+          <div className="heading-spacer"></div>
           <section className="design-section">
             <div className="timeline">
               <div className="mt-2 timeline-circle"></div>
@@ -56,7 +56,6 @@ export default function Home() {
           <section className="design-section">
             {/* For spacing at the top of timeline section */}
             <div className="timeline">
-              <div className="timeline-middle"></div>
               <div className="timeline-component timeline-content">
                 <div className='py-3'></div>
               </div>
