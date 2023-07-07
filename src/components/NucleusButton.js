@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Button from 'react-bootstrap/Button';
 
-export const NucleusButton = ({}) => {
+export const NucleusButton = ({project}) => {
     return (
         <div className="project-button-container">
             <Button className="project-button"><Link href="/detail">Show Me More</Link></Button>

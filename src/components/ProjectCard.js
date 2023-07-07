@@ -50,10 +50,12 @@ export const ProjectCard = ({group, projects}) => {
                       }
                     </Row>
                     <Row className="project-card-description">
-                      <p>{project.description}</p>
+                      <p>{project.summary}</p>
                     </Row>
                     <Row className="project-button-row">
-                      <NucleusButton/>
+                      <NucleusButton 
+                        project={{project}}
+                      />
                     </Row>
                   </Col>
                 </Row>
@@ -61,7 +63,6 @@ export const ProjectCard = ({group, projects}) => {
             </Container>
           )
         })
-
       }
     </div>
   )

@@ -79,7 +79,93 @@ export const Projects = () => {
                             skillAlt: "solder tile"
                         },
                     ],
-                    description: "Pokem ipsum dolor sit amet Deino Tympole Palpitoad Earthquake Regice Croconaw. Rock the enemy Pokemon fainted Goldeen Growl Earth Badge Magby Nincada. Fire Regigigas Luvdisc what kind of Pokemon are you Walrein Bibarel Teddiursa.",
+                    summary: "Pokem ipsum dolor sit amet Deino Tympole Palpitoad Earthquake Regice Croconaw. Rock the enemy Pokemon fainted Goldeen Growl Earth Badge Magby Nincada. Fire Regigigas Luvdisc what kind of Pokemon are you Walrein Bibarel Teddiursa.",
+                    what:"",
+                    how: [
+                        {
+                            section: "obstacles",
+                            summary: "Throughout the project, we encountered numerous obstacles and overcame a multitude of challenges in order to successfully construct BEM-0.",
+                            obstacles: [
+                                {
+                                    title:"Reverse Engineering the HTC Vive Circuit",
+                                    paragraphs: [
+                                        {
+                                            order:  1,
+                                            text: "As an additional layer of complexity, we were tasked with integrating a reverse-engineered HTC Vive circuit to receive and the location of other rovers, and project our own position. ",
+                                        },
+                                        {
+                                            order:  2,
+                                            text: "We encountered challenges with the accuracy of the Vive circuit, which varied depending on the setup, such as distance from the competition board and proximity to the Wi-Fi router. To improve the accuracy of our rover, I conducted research and discovered that changing a critical resistor in the Vive circuit would be effective. I then implemented a final design that allowed us to hot-swap the resistor as needed, resulting in significantly improved accuracy.",
+                                        },
+                                        {
+                                            order:  3,
+                                            text: "As part of the team of three, I was responsible for designing, soldering, and integrating the location module in our final circuit. Additionally, I wrote the accompanying position tracking communication code, which required the use of two different protocols, ESP-Now and UDP.",
+                                        }
+                                    ]
+                                },
+                                {
+                                    title: "Axel Damage",
+                                    paragraphs: [
+                                        {
+                                            order: 1,
+                                            text: "Bem-0's axels took on significant damage throughout repeated test drives. With limited time, we had to strike a balance between the optimal design of the axels (infill density and layer height) and print time. With ingenuity and perseverance, we were able to create a design that reduced breakdown of the plastic material and ultimately only had to replace one axel during the two-day competition.",
+                                        }
+                                    ],
+                                }
+                            ]
+                        },
+                        {
+                            section: "electrical",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "mechanical",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "code",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "conclusion",
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                    ]
                 },
                 {
                     title: "magikarp",
@@ -100,7 +186,71 @@ export const Projects = () => {
                             skillAlt: "fusion 360 tile"
                         },
                     ],
-                    description: "Dig Venomoth Rising Badge Rhydon Hoenn Combusken Solosis. Pokemon like no one ever was Slowpoke Meloetta Druddigon Phanpy Hoppip. Pokemon Rhyhorn Carracosta Aron Terrakion Fire Stunky. Venusaur Blastoise Unfezant Nidoking Emboar Galvantula Earthquake. Flying Accelgor Lopunny Furret Purugly Kecleon consectetur adipisicing elit",
+                    summary: "Dig Venomoth Rising Badge Rhydon Hoenn Combusken Solosis. Pokemon like no one ever was Slowpoke Meloetta Druddigon Phanpy Hoppip. Pokemon Rhyhorn Carracosta Aron Terrakion Fire Stunky. Venusaur Blastoise Unfezant Nidoking Emboar Galvantula Earthquake. Flying Accelgor Lopunny Furret Purugly Kecleon consectetur adipisicing elit",
+                    what:"",
+                    how: [
+                        {
+                            section: "obstacles",
+                            summary: "",
+                            obstacles: [
+                                {
+                                    title:"",
+                                    paragraphs: [],
+                                },
+                            ]
+                        },
+                        {
+                            section: "electrical",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "mechanical",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "code",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "conclusion",
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                    ]
                 },
                 {
                     title: "skyblue",
@@ -121,7 +271,71 @@ export const Projects = () => {
                             skillAlt: "visual studio tile"
                         },
                     ],
-                    description: "Blastoise Mareep Slowpoke Tyrogue incididunt ut labore Magikarp used Splash bicycle. Ut enim ad minim veniam Golem Hypno Purugly Slakoth Darmanitan Mint Berry. Velit esse cillum dolore eu fugiat nulla pariatur Mareep Pachirisu Cerulean City Fire Red Rotom Grumpig.",
+                    summary: "Blastoise Mareep Slowpoke Tyrogue incididunt ut labore Magikarp used Splash bicycle. Ut enim ad minim veniam Golem Hypno Purugly Slakoth Darmanitan Mint Berry. Velit esse cillum dolore eu fugiat nulla pariatur Mareep Pachirisu Cerulean City Fire Red Rotom Grumpig.",
+                    what:"",
+                    how: [
+                        {
+                            section: "obstacles",
+                            summary: "",
+                            obstacles: [
+                                {
+                                    title:"",
+                                    paragraphs: [],
+                                },
+                            ]
+                        },
+                        {
+                            section: "electrical",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "mechanical",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "code",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "conclusion",
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                    ]
                 },
             ]
         },
@@ -147,9 +361,72 @@ export const Projects = () => {
                             skillAlt: "solidworks tile"
                         }
                     ],
-                    description: "Strength Musharna Sonic Boom Swoobat Duskull Shaymin Deino. Fire Stoutland Giovanni Gothorita Tranquill deserunt mollit Normal. Ut aliquip ex ea commodo consequat Blitzle Totodile Stunky Typhlosion Sewaddle Goldeen. Fuchsia City Graveler Fighting in a world we must defend Chikorita.",
+                    summary: "Strength Musharna Sonic Boom Swoobat Duskull Shaymin Deino. Fire Stoutland Giovanni Gothorita Tranquill deserunt mollit Normal. Ut aliquip ex ea commodo consequat Blitzle Totodile Stunky Typhlosion Sewaddle Goldeen. Fuchsia City Graveler Fighting in a world we must defend Chikorita.",
+                    what:"",
+                    how: [
+                        {
+                            section: "obstacles",
+                            summary: "",
+                            obstacles: [
+                                {
+                                    title:"",
+                                    paragraphs: [],
+                                },
+                            ]
+                        },
+                        {
+                            section: "electrical",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "mechanical",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "code",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "conclusion",
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                    ]
                 },
-                
             ]
         },
         {
@@ -174,7 +451,71 @@ export const Projects = () => {
                             skillAlt: "altium tile"
                         },
                     ],
-                    description: "Rainbow Badge Numel Strength Tranquill Registeel Herdier Seel. Poison Nincada Simisage Delibird Chimecho Ninetales Oshawott. Strength Rapidash Plain Badge Gliscor Oshawott Surskit Magikarp. Electric Pewter City Electabuzz Clamperl Electrike.",
+                    summary: "Rainbow Badge Numel Strength Tranquill Registeel Herdier Seel. Poison Nincada Simisage Delibird Chimecho Ninetales Oshawott. Strength Rapidash Plain Badge Gliscor Oshawott Surskit Magikarp. Electric Pewter City Electabuzz Clamperl Electrike.",
+                    what:"",
+                    how: [
+                        {
+                            section: "obstacles",
+                            summary: "",
+                            obstacles: [
+                                {
+                                    title:"",
+                                    paragraphs: [],
+                                },
+                            ]
+                        },
+                        {
+                            section: "electrical",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "mechanical",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "code",
+                            modules: [
+                                {
+                                    name: ""
+                                },
+                            ],
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                        {
+                            section: "conclusion",
+                            paragraphs: [
+                                {
+                                    order:  1,
+                                    text: "",
+                                }
+                            ]
+                        },
+                    ]
                 },
             ]
         }
