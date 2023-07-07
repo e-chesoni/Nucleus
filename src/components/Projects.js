@@ -43,6 +43,7 @@ import c from "../assets/img/skill/c-skill.svg";
 import circuit from "../assets/img/skill/circuit-skill.svg";
 import cpp from "../assets/img/skill/cpp-skill.svg";
 import csharp from "../assets/img/skill/c-sharp-skill.svg";
+import fusion from "../assets/img/icon/fusion-360-tile.svg";
 import java from "../assets/img/skill/java-skill.svg";
 import javascript from "../assets/img/skill/javascript-skill.svg";
 import python from "../assets/img/skill/python-skill.svg";
@@ -81,17 +82,46 @@ export const Projects = () => {
                     description: "Pokem ipsum dolor sit amet Deino Tympole Palpitoad Earthquake Regice Croconaw. Rock the enemy Pokemon fainted Goldeen Growl Earth Badge Magby Nincada. Fire Regigigas Luvdisc what kind of Pokemon are you Walrein Bibarel Teddiursa.",
                 },
                 {
-                    title: "second",
+                    title: "magikarp",
                     tagline: "second tagline",
                     imgUrl: bemo_components,
-                    iconUrl: car_white,
+                    iconUrl: fish_white,
+                    skills: [ 
+                        {
+                            skillUrl: cpp,
+                            skillAlt: "cpp tile"
+                        },
+                        {
+                            skillUrl: circuit,
+                            skillAlt: "circuit tile"
+                        },
+                        {
+                            skillUrl: fusion,
+                            skillAlt: "fusion 360 tile"
+                        },
+                    ],
+                    description: "Dig Venomoth Rising Badge Rhydon Hoenn Combusken Solosis. Pokemon like no one ever was Slowpoke Meloetta Druddigon Phanpy Hoppip. Pokemon Rhyhorn Carracosta Aron Terrakion Fire Stunky. Venusaur Blastoise Unfezant Nidoking Emboar Galvantula Earthquake. Flying Accelgor Lopunny Furret Purugly Kecleon consectetur adipisicing elit",
+                },
+                {
+                    title: "skyblue",
+                    tagline: "fourth tagline",
+                    imgUrl: code,
+                    iconUrl: cloud_white,
                     skills: [ 
                         {
                             skillUrl: csharp,
                             skillAlt: "c-sharp tile"
                         },
+                        {
+                            skillUrl: aws,
+                            skillAlt: "aws tile"
+                        },
+                        {
+                            skillUrl: vs,
+                            skillAlt: "visual studio tile"
+                        },
                     ],
-                    description: "Dig Venomoth Rising Badge Rhydon Hoenn Combusken Solosis. Pokemon like no one ever was Slowpoke Meloetta Druddigon Phanpy Hoppip. Pokemon Rhyhorn Carracosta Aron Terrakion Fire Stunky. Venusaur Blastoise Unfezant Nidoking Emboar Galvantula Earthquake. Flying Accelgor Lopunny Furret Purugly Kecleon consectetur adipisicing elit",
+                    description: "Blastoise Mareep Slowpoke Tyrogue incididunt ut labore Magikarp used Splash bicycle. Ut enim ad minim veniam Golem Hypno Purugly Slakoth Darmanitan Mint Berry. Velit esse cillum dolore eu fugiat nulla pariatur Mareep Pachirisu Cerulean City Fire Red Rotom Grumpig.",
                 },
             ]
         },
@@ -119,36 +149,32 @@ export const Projects = () => {
                     ],
                     description: "Strength Musharna Sonic Boom Swoobat Duskull Shaymin Deino. Fire Stoutland Giovanni Gothorita Tranquill deserunt mollit Normal. Ut aliquip ex ea commodo consequat Blitzle Totodile Stunky Typhlosion Sewaddle Goldeen. Fuchsia City Graveler Fighting in a world we must defend Chikorita.",
                 },
-                {
-                    title: "fourth",
-                    tagline: "fourth tagline",
-                    imgUrl: code,
-                    iconUrl: magneto_helment_white,
-                    skills: [ 
-                        {
-                            skillUrl: csharp,
-                            skillAlt: "c-sharp tile"
-                        }
-                    ],
-                    description: "Blastoise Mareep Slowpoke Tyrogue incididunt ut labore Magikarp used Splash bicycle. Ut enim ad minim veniam Golem Hypno Purugly Slakoth Darmanitan Mint Berry. Velit esse cillum dolore eu fugiat nulla pariatur Mareep Pachirisu Cerulean City Fire Red Rotom Grumpig.",
-                },
+                
             ]
         },
         {
             group: "pcb",
             projects: [
                 {
-                    title: "fifth",
+                    title: "Persistance of Vision Bike Display",
                     tagline: "third tagline",
                     imgUrl: pcb,
-                    iconUrl: magneto_helment_white,
+                    iconUrl: bike_white,
                     skills: [ 
                         {
-                            skillUrl: csharp,
-                            skillAlt: "c-sharp tile"
-                        }
+                            skillUrl: c,
+                            skillAlt: "c tile"
+                        },
+                        {
+                            skillUrl: circuit,
+                            skillAlt: "circuit tile"
+                        },
+                        {
+                            skillUrl: altium,
+                            skillAlt: "altium tile"
+                        },
                     ],
-                    description: "Rainbow Badge Numel Strength Tranquill Registeel Herdier Seel. Poison Nincada Simisage Delibird Chimecho Ninetales Oshawott. Strength Rapidash Plain Badge Gliscor Oshawott Surskit Magikarp. Electric Pewter City Electabuzz Clamperl Electrike Celadon City Hydreigon.",
+                    description: "Rainbow Badge Numel Strength Tranquill Registeel Herdier Seel. Poison Nincada Simisage Delibird Chimecho Ninetales Oshawott. Strength Rapidash Plain Badge Gliscor Oshawott Surskit Magikarp. Electric Pewter City Electabuzz Clamperl Electrike.",
                 },
             ]
         }
