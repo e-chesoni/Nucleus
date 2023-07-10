@@ -47,9 +47,7 @@ export const ProjectCard = ({ title, tagline, imgUrl, iconUrl, skills, summary }
               <p>{summary}</p>
             </Row>
             <Row className="project-button-row">
-              <NucleusButton 
-                
-              />
+              <NucleusButton />
             </Row>
           </Col>
         </Row>
