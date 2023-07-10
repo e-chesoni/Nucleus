@@ -1,15 +1,17 @@
 import { projectGroups } from "../projectGroups";
+import { projects } from "../../../projects";
 
-export default function Page({ params } : { params: { group: string }}) {
+export default function Page({ params } : { params: { project: string }}) {
+    console.log(params.project);
     return (
         <div>
             {
-                projectGroups.map((group, index) => {
-                    if( params.group == group.name )
+                projects.map((project, index) => {
+                    if( params.project === project.title )
                     {
                         return (
                             <div>
-                               {group.name}
+                               {project.title}
                             </div>
                         )
                     }
