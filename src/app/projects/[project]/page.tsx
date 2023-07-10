@@ -1,5 +1,4 @@
-import { projectGroups } from "../projectGroups";
-import { projects } from "../../../projects";
+import { projects } from "../../projects";
 
 export default function Page({ params } : { params: { project: string }}) {
     console.log(params.project);
