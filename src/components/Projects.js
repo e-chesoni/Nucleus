@@ -53,6 +53,7 @@ import typescript from "../assets/img/skill/typescript-skill.svg";
 import vscode from "../assets/img/skill/vs-code-skill.svg";
 import vs from "../assets/img/skill/vs-skill.svg";
 
+import { projects } from "../app/projects.js";
 
 export const Projects = () => {
 
@@ -543,49 +544,27 @@ export const Projects = () => {
                                     </Nav>
                                     <Tab.Content>
                                         <Tab.Pane eventKey="embedded">
-                                            {
-                                                categories.map((category, index) => {
-                                                    if (category.group === 'embed')
-                                                    {
-                                                        return (
-                                                            <ProjectCard
-                                                                key={index}
-                                                                {...category}
-                                                                />
-                                                            )
-                                                    } 
-                                                })
-                                            }
+                                            <Container className="project-card-container mb-5">
+                                                {
+                                                    projects.map((project, index) => {
+                                                        if (project.group === 'embed')
+                                                        {
+                                                            return (
+                                                                <ProjectCard
+                                                                    key={index}
+                                                                    {...project}
+                                                                    />
+                                                                )
+                                                        } 
+                                                    })
+                                                }
+                                            </Container>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="controls">
-                                            {
-                                                categories.map((category, index) => {
-                                                    if (category.group === 'control')
-                                                    {
-                                                        return (
-                                                            <ProjectCard
-                                                                key={index}
-                                                                {...category}
-                                                                />
-                                                            )
-                                                    } 
-                                                })
-                                            }
+
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="pcb">
-                                            {
-                                                categories.map((category, index) => {
-                                                    if (category.group === 'pcb')
-                                                    {
-                                                        return (
-                                                            <ProjectCard
-                                                                key={index}
-                                                                {...category}
-                                                                />
-                                                            )
-                                                    } 
-                                                })
-                                            }
+
                                         </Tab.Pane>
                                     </Tab.Content>
                                 </Tab.Container>

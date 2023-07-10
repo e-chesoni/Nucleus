@@ -47,10 +47,10 @@ import vs from "../../../assets/img/skill/vs-skill.svg";
 
 
 
-export const categories = [
+export const projectGroups = [
     {
         id: 1,
-        group: "embed",
+        name: "embed",
         projects: [
             {
                 title: "bemo",
@@ -333,7 +333,7 @@ export const categories = [
     },
     {
         id: 2,
-        group: "control",
+        name: "control",
         projects: [
             {
                 title: "magneto",
@@ -424,7 +424,7 @@ export const categories = [
     },
     {
         id: 3,
-        group: "pcb",
+        name: "pcb",
         projects: [
             {
                 title: "Persistance of Vision Bike Display",

@@ -8,7 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from '@/components/NavBar';
 import { Hero } from '@/components/Hero';
 import { Projects } from '@/components/Projects';
-import { TimelineSpacer } from '@/components/TimelineSpacer';
 import { About } from '@/components/About';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';

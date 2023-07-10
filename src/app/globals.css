@@ -340,7 +340,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************** Projects CSS **************/
 
-/* Palette 2 Colors Start */
 .project-text {
   color: #fff;
 }
@@ -353,12 +352,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff !important;
   background: #29ADE8 !important;
 }
-/* Palette 2 Colors End */
-
-.projects-col {
-  margin: 0;
-  padding: 0;
-}
 
 /************** Project Card CSS **************/
 
@@ -366,21 +359,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   min-height: 10vh;
 }
 
-.project-card-container {
+.project-card-col {
   background: #023047;
   border-radius: 5px;
-  max-height: 75vh;
-  min-height: 75vh;
+  max-height: 78vh;
+  min-height: 78vh;
+  width: 90vw;
+  margin-bottom: 80px;
 }
 
 .project-card-header-text {
   color: white;
 }
 
-img.project-card-header-img {
-  padding: 0;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+.project-card-header-img {
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
 }
 
 .project-card-description-container {
@@ -390,8 +384,8 @@ img.project-card-header-img {
 }
 
 .project-card-description {
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .project-button-container {
@@ -403,11 +397,6 @@ button.project-button.btn.btn-primary {
   background-color: #29ADE8;
   outline: none !important;
   outline-offset: none !important;
-}
-
-div.projects-col.col {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .shadow {
