@@ -3,8 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { projects } from "../../projects";
 import Head from 'next/head'
 import { ProjectCard } from '@/components/ProjectCard';
-import { Obstacle } from '../../../components/detail/Obstacle';
-import { About } from '@/components/About';
+import { How } from '../../../components/detail/How';
+import { BuildElement } from '../../../components/detail/BuildElement';
+import { Obstacle } from "../../../components/detail/Obstacle";
+import { Conclusion } from "../../../components/detail/Conclusion";
 
 export default function Page({ params } : { params: { project: string }}) {
     console.log(params.project);
@@ -37,7 +39,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                                     if (how.section === 'obstacles')
                                                     {
                                                         return (
-                                                            <Obstacle
+                                                            <How
                                                                 key={index}
                                                                 {...how}
                                                             />
@@ -52,20 +54,80 @@ export default function Page({ params } : { params: { project: string }}) {
                                             <div className="detail-build-mechanical-container">
                                                 {/* Mechanical */}
                                                 <h4>Mechanical</h4>
+                                                {
+                                                    project.how.map((how, index) => {
+                                                        if (how.section === 'mechanical')
+                                                        {
+                                                            return (
+                                                                <div>
+                                                                    <BuildElement
+                                                                        key={index}
+                                                                        {...how}
+                                                                    />
+                                                                </div>
+                                                            )
+                                                        } 
+                                                    })
+                                                }
                                             </div>
                                             <div className="detail-build-elecrical-container">
                                                 {/* Electrical */}
                                                 <h4>Electrical</h4>
+                                                {
+                                                    project.how.map((how, index) => {
+                                                        if (how.section === 'electrical')
+                                                        {
+                                                            return (
+                                                                <div>
+                                                                    <BuildElement
+                                                                        key={index}
+                                                                        {...how}
+                                                                    />
+                                                                </div>
+                                                            )
+                                                        } 
+                                                    })
+                                                }
                                             </div>
                                             <div className="detail-build-code-container">
                                                 {/* Code */}
                                                 <h4>Code</h4>
+                                                {
+                                                    project.how.map((how, index) => {
+                                                        if (how.section === 'code')
+                                                        {
+                                                            return (
+                                                                <div>
+                                                                    <BuildElement
+                                                                        key={index}
+                                                                        {...how}
+                                                                    />
+                                                                </div>
+                                                            )
+                                                        } 
+                                                    })
+                                                }
                                             </div>
                                         </div>
                                     </div>
                                     <div className="detail-conclusion">
                                         {/* Conclusion */}
                                         <h2>Conclusion</h2>
+                                        {
+                                                    project.how.map((how, index) => {
+                                                        if (how.section === 'conclusion')
+                                                        {
+                                                            return (
+                                                                <div>
+                                                                    <Conclusion
+                                                                        key={index}
+                                                                        {...how}
+                                                                    />
+                                                                </div>
+                                                            )
+                                                        } 
+                                                    })
+                                                }
                                     </div>
                                     {/* TODO: DetailFooter */}
                                 </main>

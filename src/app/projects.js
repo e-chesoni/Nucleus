@@ -68,7 +68,7 @@ export const projects = [
             },
         ],
         summary: "Pokem ipsum dolor sit amet Deino Tympole Palpitoad Earthquake Regice Croconaw. Rock the enemy Pokemon fainted Goldeen Growl Earth Badge Magby Nincada. Fire Regigigas Luvdisc what kind of Pokemon are you Walrein Bibarel Teddiursa.",
-        what:"what what in the bemo!",
+        what:"As part of a team of three, we designed and built BEM-0, a quad rover that competed in a two-day robotics competition. My contributions included designing and soldering the location module in our final circuit, as well as writing the accompanying position tracking communication code. This required the use of two different protocols, ESP-Now and UDP. Despite numerous challenges, we placed sixth in the competition, and our robot was praised for its robust driving algorithm, above-and-beyond visual graphics, and overall sturdiness.",
         how: [
             {
                 section: "obstacles",
@@ -106,41 +106,85 @@ export const projects = [
                 section: "electrical",
                 modules: [
                     {
-                        name: ""
+                        name: "Motor Circuit"
+                    },
+                    {
+                        name: "IR Detection Circuit"
+                    },
+                    {
+                        name: "HTC Vive Circuit"
+                    },
+                    {
+                        name: "Time-of-Flight Sensor Array"
                     },
                 ],
                 paragraphs: [
                     {
                         order:  1,
-                        text: "",
-                    }
+                        text: "BEM-01 was designed to work with one MCU. The electrical design required 5 pins for eachmotor (4 without the encoder), 2 pins for each ToF sensor, 1 pin for each IR sensor, and 1 pinfor each Vive circuit. Using the ESP32 S3, we had just enough pins to accommodate our needs.BEM-01’s intended design leaned heavily on Vive coordinates. Initially, we assumed we wouldbe able to get relatively accurate and clean data from Vive (assuming we could create a suitablefilter). Our intention of mapping the field required the use of several time of flight sensors. We arranged them in an array such that the cones of their fields of view were tangential to each other. i.e. since the FoV was approximately 27◦, we 3d printed a mount so that eight sensors could beattached pointing 27◦ apart from one another.",
+                    },
+                    {
+                        order:  2,
+                        text: "BEM-01 was designed to operate with a single MCU. Our design required 5 pins for each motor (4 without the encoder), 2 pins for each ToF sensor, 1 pin for each IR sensor, and 1 pin for each Vive circuit. We selected the ESP32 S3 to accommodate our needs, since it had just enough pins.",
+                    },
+                    {
+                        order:  3,
+                        text: "We used an array of time-of-flight sensors to generate a virtual map of the field. We arranged them in an array such that the cones of their fields of view were tangential to each other. Since the FoV was approximately 27 degrees, we 3D printed a mount so that eight sensors could be attached, pointing 27 degrees apart from one another.",
+                    },
+                    {
+                        order: 4,
+                        text: "Finally, we utilized an IR detection circuit to find and track the real and fake trophies."
+                    },
                 ]
             },
             {
                 section: "mechanical",
                 modules: [
                     {
-                        name: ""
+                        name: "Passive Claw"
+                    },
+                    {
+                        name: "Modular Body"
+                    },
+                    {
+                        name: "Mecanuum Wheels"
                     },
                 ],
                 paragraphs: [
                     {
                         order:  1,
-                        text: "",
-                    }
+                        text: "We wanted the ability to more easily remove most parts. Since 3d prints tend to shear between layers rather than break across layers, we printed the axles such that the layers were parallel to the axis of rotation, to provide more strength. We developed a final axle solution that not only improved durability, but also facilitated easier replacement when necessary.",
+                    },
                 ]
             },
             {
                 section: "code",
                 modules: [
                     {
-                        name: ""
+                        name: "Mobility Classes"
+                    },
+                    {
+                        name: "Location Classes"
+                    },
+                    {
+                        name: "Vision Classes"
+                    },
+                    {
+                        name: "Networking and Communication Classes"
                     },
                 ],
                 paragraphs: [
                     {
                         order:  1,
-                        text: "",
+                        text: "One of our initial concerns was the computational capacity required for the mapping algorithm, which heavily relied on floating-point vector math and trigonometry calculations. We selected the ESP32 S3 for our development board due to its high clock speed, floating point unit, and numerous GPIO pins. Thanks to the appropriately sized MCU, we were able to produce a 60x144 map based on real data in just 50 milliseconds."
+                    },
+                    {
+                        order:  2,
+                        text: "As the robotics lead for the project, I was responsible for writing the code for the Mobility, Vive, and Comms classes. Additionally, I worked closely with the software lead to integrate the communication classes with the rest of the networking infrastructure."
+                    },
+                    {
+                        order: 3,
+                        text: "I faced an exciting challenge in designing Bem-0's mobility system as we opted to use mecanum wheels. This required me to apply principles of linear algebra and geometry to calculate the driving speed of each wheel relative to the desired velocity."
                     }
                 ]
             },
@@ -149,7 +193,11 @@ export const projects = [
                 paragraphs: [
                     {
                         order:  1,
-                        text: "",
+                        text: "Bem-0 recieved accolades for our creative design, and original apporach to problem solving.",
+                    },
+                    {
+                        order:  2,
+                        text: "The Bem-0 project serves as a testament to my skills as an embedded engineer. Through designing and building a complex robotics project, I was able to demonstrate my strong understanding of microcontrollers, embedded software development, and low-level hardware interfaces. Additionally, the project highlighted the importance of problem-solving skills, as my team encountered numerous obstacles and had to employ creative solutions to overcome them. I was also able to showcase my specific programming skills in C++, knowledge of real-time operating systems, and experience with hardware design and schematic capture tools. Finally, the project demonstrates my ability to communicate technical concepts effectively, a crucial skill for any engineer.",
                     }
                 ]
             },
