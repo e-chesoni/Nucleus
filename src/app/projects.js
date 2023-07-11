@@ -68,7 +68,7 @@ export const projects = [
             },
         ],
         summary: "Pokem ipsum dolor sit amet Deino Tympole Palpitoad Earthquake Regice Croconaw. Rock the enemy Pokemon fainted Goldeen Growl Earth Badge Magby Nincada. Fire Regigigas Luvdisc what kind of Pokemon are you Walrein Bibarel Teddiursa.",
-        what:"",
+        what:"what what in the bemo!",
         how: [
             {
                 section: "obstacles",
@@ -176,7 +176,7 @@ export const projects = [
             },
         ],
         summary: "Dig Venomoth Rising Badge Rhydon Hoenn Combusken Solosis. Pokemon like no one ever was Slowpoke Meloetta Druddigon Phanpy Hoppip. Pokemon Rhyhorn Carracosta Aron Terrakion Fire Stunky. Venusaur Blastoise Unfezant Nidoking Emboar Galvantula Earthquake. Flying Accelgor Lopunny Furret Purugly Kecleon consectetur adipisicing elit",
-        what:"",
+        what:"this is what magikarp is all about",
         how: [
             {
                 section: "obstacles",
@@ -262,7 +262,7 @@ export const projects = [
             },
         ],
         summary: "Blastoise Mareep Slowpoke Tyrogue incididunt ut labore Magikarp used Splash bicycle. Ut enim ad minim veniam Golem Hypno Purugly Slakoth Darmanitan Mint Berry. Velit esse cillum dolore eu fugiat nulla pariatur Mareep Pachirisu Cerulean City Fire Red Rotom Grumpig.",
-        what:"",
+        what:"this is what skyblue is about",
         how: [
             {
                 section: "obstacles",
@@ -348,7 +348,7 @@ export const projects = [
             }
         ],
         summary: "Strength Musharna Sonic Boom Swoobat Duskull Shaymin Deino. Fire Stoutland Giovanni Gothorita Tranquill deserunt mollit Normal. Ut aliquip ex ea commodo consequat Blitzle Totodile Stunky Typhlosion Sewaddle Goldeen. Fuchsia City Graveler Fighting in a world we must defend Chikorita.",
-        what:"",
+        what:"the secret sauce for magneto...",
         how: [
             {
                 section: "obstacles",
@@ -434,7 +434,7 @@ export const projects = [
             },
         ],
         summary: "Rainbow Badge Numel Strength Tranquill Registeel Herdier Seel. Poison Nincada Simisage Delibird Chimecho Ninetales Oshawott. Strength Rapidash Plain Badge Gliscor Oshawott Surskit Magikarp. Electric Pewter City Electabuzz Clamperl Electrike.",
-        what:"",
+        what:"heres the tea about pcb",
         how: [
             {
                 section: "obstacles",

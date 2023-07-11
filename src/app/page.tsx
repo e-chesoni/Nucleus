@@ -1,7 +1,4 @@
-import Image from 'next/image'
 import Head from 'next/head'
-import magneto from "../assets/magneto.jpeg";
-import bemo from "../assets/bemo.jpeg";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

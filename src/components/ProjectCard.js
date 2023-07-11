@@ -1,6 +1,5 @@
 import { Container, Col, Row } from "react-bootstrap";
 import Image from 'next/image'
-import Button from 'react-bootstrap/Button';
 
 import { NucleusButton } from "./NucleusButton";
 
