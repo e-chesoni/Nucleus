@@ -1,7 +1,11 @@
 "use client";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Head from 'next/head';
+import Image from 'next/image';
+import { DetailNavBar } from '../../../components/detail/DetailNavBar';
+import { DetailFooter } from '../../../components/detail/DetailFooter';
 import { projects } from "../../projects";
-import Head from 'next/head'
 import { ProjectCard } from '@/components/ProjectCard';
 import { How } from '../../../components/detail/How';
 import { BuildElement } from '../../../components/detail/BuildElement';
@@ -19,16 +23,27 @@ export default function Page({ params } : { params: { project: string }}) {
                         return (
                             <div>
                                 <Head>Project Detail Page</Head>
-                                <main className='bg-main-top'>
-                                    {/* TODO: DetailNavBar */}
-                                    <div className="detail-title-container">
-                                        <h1>{project.title}</h1>
-                                        <div className="detail-title-divider"></div>
-                                    </div>
-                                    <div className="detail-tldr-container">
-                                        {/* TLDR */}
-                                        <h2 className="detail-tldr">TLDR;</h2>
-                                        <p>{project.what}</p>
+                                <main className='bg-detail'>
+                                    <DetailNavBar/>
+                                    <div className='detail-intro-container'>
+                                        <Image 
+                                            className="detail-header-img"
+                                            src={project.imgUrl}
+                                            alt="img alt"
+                                            style={{alignSelf: 'center'}}
+                                        />
+                                        <div className="detail-title-container detail-header">
+                                            <h1 className='detail-header-text'>{project.title}</h1>
+                                            <div className="detail-title-divider"></div>
+                                        </div>
+                                        <div className="detail-tldr-container detail-text">
+                                            {/* TLDR */}
+                                            <p>{project.what}</p>
+                                        </div>
+                                        <DetailFooter
+                                            key={index}
+                                            {...project}
+                                        />
                                     </div>
                                     <div className="detail-how-container">
                                         {/* How */}

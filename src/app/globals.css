@@ -436,4 +436,49 @@ button.project-button.btn.btn-primary {
 
 /************** Details CSS **************/
 
+.bg-detail {
+  color: #fff;
+}
 
+.detail-intro-container {
+  height: 100vh;
+}
+
+.detail-header {
+  padding: 30px 30px 0px 35px;
+}
+
+.detail-text {
+  padding: 0px 30px 30px 35px;
+  color: #DDDFE1;
+  font-size: medium;
+}
+
+.detail-title-divider {
+  height: 3px;
+  width: 20vw;
+  margin-bottom: 20px;
+  background-color: #FF5400;
+  border-radius: 30%;
+}
+
+.detail-foot-divider {
+  width: 90vw;
+  padding-left: 35px;
+  position: absolute;
+  bottom: 15px;
+}
+
+.detail-foot-divider-bar {
+  height: 3px;
+  width: 80vw;
+  margin-top: 12px;
+  background-color: #FF5400;
+  border-radius: 30%;
+}
+
+.detail-foot-divider-id {
+  padding-left: 10px;
+  width: 10vw;
+  color: #FF5400;
+}

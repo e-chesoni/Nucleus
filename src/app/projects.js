@@ -48,6 +48,7 @@ import vs from "../assets/img/skill/vs-skill.svg";
 
 export const projects = [
     {
+        id:1,
         group: "embed",
         title: "bemo",
         tagline: "first tagline",
@@ -68,7 +69,7 @@ export const projects = [
             },
         ],
         summary: "Pokem ipsum dolor sit amet Deino Tympole Palpitoad Earthquake Regice Croconaw. Rock the enemy Pokemon fainted Goldeen Growl Earth Badge Magby Nincada. Fire Regigigas Luvdisc what kind of Pokemon are you Walrein Bibarel Teddiursa.",
-        what:"As part of a team of three, we designed and built BEM-0, a quad rover that competed in a two-day robotics competition. My contributions included designing and soldering the location module in our final circuit, as well as writing the accompanying position tracking communication code. This required the use of two different protocols, ESP-Now and UDP. Despite numerous challenges, we placed sixth in the competition, and our robot was praised for its robust driving algorithm, above-and-beyond visual graphics, and overall sturdiness.",
+        what:"As part of a team of three, I designed and built a quad rover that competed in a two-day robotics competition. My contributions included designing and soldering the location module in our final circuit, as well as writing the accompanying position tracking communication code. Despite numerous challenges, we placed sixth in the competition, and our robot was praised for its robust driving algorithm, visual graphics, and overall sturdiness.",
         how: [
             {
                 section: "obstacles",
@@ -204,6 +205,7 @@ export const projects = [
         ]
     },
     {
+        id:2,
         group: "embed",
         title: "magikarp",
         tagline: "second tagline",
@@ -290,6 +292,7 @@ export const projects = [
         ]
     },
     {
+        id:3,
         group: "embed",
         title: "skyblue",
         tagline: "fourth tagline",
@@ -376,6 +379,7 @@ export const projects = [
         ]
     },
     {
+        id:4,
         group: "control",
         title: "magneto",
         tagline: "third tagline",
@@ -462,6 +466,7 @@ export const projects = [
         ]
     },
     {
+        id:5,
         group: "pcb",
         title: "Persistance of Vision Bike Display",
         tagline: "third tagline",
