@@ -7,6 +7,7 @@ import { DetailNavBar } from '../../../components/detail/DetailNavBar';
 import { DetailFooter } from '../../../components/detail/DetailFooter';
 import { projects } from "../../projects";
 import { ProjectCard } from '@/components/ProjectCard';
+import { StickyHeader } from '../../../components/detail/StickyHeader';
 import { How } from '../../../components/detail/How';
 import { BuildElement } from '../../../components/detail/BuildElement';
 import { Obstacle } from "../../../components/detail/Obstacle";
@@ -47,8 +48,24 @@ export default function Page({ params } : { params: { project: string }}) {
                                     </div>
                                     <div className="detail-how-container">
                                         {/* How */}
-                                        <h2>How?</h2>
-                                        <div className="detail-obstacles-container">
+                                        <div className='detail-sticky-header detail-how-intro'>
+                                            <h2 className="detail-header-text detail-how-title">How?</h2>
+                                            {
+                                                project.how.map((how, index) => {
+                                                    if (how.section === 'obstacles')
+                                                    {
+                                                        return (
+                                                            <StickyHeader
+                                                                key={index}
+                                                                {...how}
+                                                            />
+                                                        )
+                                                    } 
+                                                })
+                                            }
+                                        </div>
+                                        <div className="detail-obstacles-container detail-text">
+                                            <h3 className="detail-challenges-header">Challenges</h3>
                                             {
                                                 project.how.map((how, index) => {
                                                     if (how.section === 'obstacles')

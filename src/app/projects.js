@@ -50,7 +50,7 @@ export const projects = [
     {
         id:1,
         group: "embed",
-        title: "bemo",
+        title: "Bem-0",
         tagline: "first tagline",
         imgUrl: bemo_desk,
         iconUrl: car_white,

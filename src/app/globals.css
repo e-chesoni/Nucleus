@@ -435,6 +435,11 @@ button.project-button.btn.btn-primary {
 
 
 /************** Details CSS **************/
+nav.sticky-nav {
+}
+
+.sticky-nav.container {
+}
 
 .bg-detail {
   color: #fff;
@@ -444,8 +449,31 @@ button.project-button.btn.btn-primary {
   height: 100vh;
 }
 
-.detail-header {
+.detail-header, .detail-sticky-header {
   padding: 30px 30px 0px 35px;
+}
+
+.detail-how-intro {
+  height: 100vh;
+}
+
+.detail-how-container {
+}
+
+.detail-sticky-header {
+  position: sticky;
+  top: 8vh;
+}
+
+.detail-challenges-header {
+  padding: 30px 30px 0px 0px;
+  position: sticky;
+  top: 30vh;
+}
+
+
+.detail-header-text {
+  text-transform: uppercase;
 }
 
 .detail-text {
@@ -481,4 +509,8 @@ button.project-button.btn.btn-primary {
   padding-left: 10px;
   width: 10vw;
   color: #FF5400;
+}
+
+.obstacle-row {
+  height: 75vh;
 }

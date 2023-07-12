@@ -25,8 +25,8 @@ export const DetailNavBar = () => {
     }
 
     return (
-        <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-            <Container>
+        <Navbar expand="lg" className={scrolled ? "scrolled sticky-nav" : "sticky-nav"}>
+            <Container className="sticky-nav">
                 <Navbar.Brand className="navbar-link" href="#/">&lt;<span className="navbar-brand-inner-text">e-chesoni</span>/&gt;</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse>
