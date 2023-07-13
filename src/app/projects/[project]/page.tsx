@@ -41,10 +41,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                             {/* TLDR */}
                                             <p>{project.what}</p>
                                         </div>
-                                        <DetailFooter
-                                            key={index}
-                                            {...project}
-                                        />
+                                        
                                     </div>
                                     <div className="detail-how-container">
                                         {/* How */}
@@ -159,7 +156,12 @@ export default function Page({ params } : { params: { project: string }}) {
                                                 }
                                     </div>
                                     {/* TODO: DetailFooter */}
+                                    <DetailFooter
+                                            key={index}
+                                            {...project}
+                                        />
                                 </main>
+                                
                             </div>
                         )
                     }

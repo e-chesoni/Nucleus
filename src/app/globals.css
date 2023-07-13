@@ -443,6 +443,8 @@ nav.sticky-nav {
 
 .bg-detail {
   color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .detail-intro-container {
@@ -508,6 +510,7 @@ nav.sticky-nav {
   padding-left: 35px;
   position: absolute;
   bottom: 15px;
+  position: sticky;
 }
 
 .detail-foot-divider-bar {
