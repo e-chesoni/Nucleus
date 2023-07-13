@@ -48,10 +48,38 @@ export const Projects = () => {
                                             </Container>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="controls">
-
+                                            <Container className="project-card-container mb-5">
+                                                {
+                                                    projects.map((project, index) => {
+                                                        if (project.group === 'control')
+                                                        {
+                                                            return (
+                                                                <ProjectCard
+                                                                    key={index}
+                                                                    {...project}
+                                                                    />
+                                                                )
+                                                        } 
+                                                    })
+                                                }
+                                            </Container>
                                         </Tab.Pane>
                                         <Tab.Pane eventKey="pcb">
-
+                                            <Container className="project-card-container mb-5">
+                                                {
+                                                    projects.map((project, index) => {
+                                                        if (project.group === 'embed')
+                                                        {
+                                                            return (
+                                                                <ProjectCard
+                                                                    key={index}
+                                                                    {...project}
+                                                                    />
+                                                                )
+                                                        } 
+                                                    })
+                                                }
+                                            </Container>
                                         </Tab.Pane>
                                     </Tab.Content>
                                 </Tab.Container>
