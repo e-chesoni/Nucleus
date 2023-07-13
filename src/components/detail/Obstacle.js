@@ -1,7 +1,7 @@
 "use client";
-import { Container, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
-export const Obstacle = ({ title, paragraphs }) => {
+export const Obstacle = ({ paragraphs }) => {
     return (
         <Col className="obstacle-col">
             {

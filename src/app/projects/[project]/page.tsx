@@ -65,7 +65,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                             }
                                         </div>
                                         <div className="detail-obstacles-container detail-text">
-                                            <h3 className="detail-challenges-header">Challenges</h3>
+                                            <h3 className="detail-how-sub-header">Challenges</h3>
                                             {
                                                 project.how.map((how, index) => {
                                                     if (how.section === 'obstacles')
@@ -80,12 +80,11 @@ export default function Page({ params } : { params: { project: string }}) {
                                                 })
                                             }
                                         </div>
-                                        <div className="detail-build-container">
+                                        <div className="detail-build-container detail-text">
                                             {/* Build */}
-                                            <h3>Build</h3>
+                                            <h3 className="detail-how-sub-header">Build</h3>
                                             <div className="detail-build-mechanical-container">
                                                 {/* Mechanical */}
-                                                <h4>Mechanical</h4>
                                                 {
                                                     project.how.map((how, index) => {
                                                         if (how.section === 'mechanical')
@@ -104,7 +103,6 @@ export default function Page({ params } : { params: { project: string }}) {
                                             </div>
                                             <div className="detail-build-elecrical-container">
                                                 {/* Electrical */}
-                                                <h4>Electrical</h4>
                                                 {
                                                     project.how.map((how, index) => {
                                                         if (how.section === 'electrical')
@@ -123,7 +121,6 @@ export default function Page({ params } : { params: { project: string }}) {
                                             </div>
                                             <div className="detail-build-code-container">
                                                 {/* Code */}
-                                                <h4>Code</h4>
                                                 {
                                                     project.how.map((how, index) => {
                                                         if (how.section === 'code')
@@ -142,9 +139,9 @@ export default function Page({ params } : { params: { project: string }}) {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="detail-conclusion">
+                                    <div className="detail-conclusion detail-text">
                                         {/* Conclusion */}
-                                        <h2>Conclusion</h2>
+                                        <h2 className='conclusion-header'>Conclusion</h2>
                                         {
                                                     project.how.map((how, index) => {
                                                         if (how.section === 'conclusion')

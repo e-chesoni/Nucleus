@@ -465,10 +465,23 @@ nav.sticky-nav {
   top: 8vh;
 }
 
-.detail-challenges-header {
-  padding: 30px 30px 0px 0px;
+.detail-how-sub-header {
+  padding: 30px 30px 30px 0px;
   position: sticky;
   top: 30vh;
+}
+
+.conclusion-header {
+  padding: 30px 30px 30px 0px;
+  position: sticky;
+  top: 0vh;
+}
+
+.detail-how-sub-section-header {
+  padding: 30px 30px 30px 0px;
+  position: sticky;
+  top: 35vh;
+  text-transform: capitalize;
 }
 
 
