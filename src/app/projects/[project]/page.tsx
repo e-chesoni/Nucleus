@@ -3,6 +3,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 import Image from 'next/image';
+
+import { Canvas } from "@react-three/fiber";
+import Box from "../../../components/detail/Box";
+import Sphere from "../../../components/detail/AnimatedSphere";
+import { extend } from '@react-three/fiber'
+import { OrbitControls, TransformControls } from '@react-three/drei';
+extend({ OrbitControls, TransformControls })
+
+import React, { Suspense } from "react";
+
 import { DetailNavBar } from '../../../components/detail/DetailNavBar';
 import { DetailFooter } from '../../../components/detail/DetailFooter';
 import { projects } from "../../projects";
@@ -12,6 +22,7 @@ import { How } from '../../../components/detail/How';
 import { BuildElement } from '../../../components/detail/BuildElement';
 import { Obstacle } from "../../../components/detail/Obstacle";
 import { Conclusion } from "../../../components/detail/Conclusion";
+
 
 export default function Page({ params } : { params: { project: string }}) {
     console.log(params.project);
@@ -27,12 +38,14 @@ export default function Page({ params } : { params: { project: string }}) {
                                 <main className='bg-detail'>
                                     <DetailNavBar/>
                                     <div className='detail-intro-container'>
-                                        <Image 
-                                            className="detail-header-img"
-                                            src={project.imgUrl}
-                                            alt="img alt"
-                                            style={{alignSelf: 'center'}}
-                                        />
+                                        <Canvas className='canvas'>
+                                            <OrbitControls enableZoom={false} />
+                                            <ambientLight intensity={0.5}/>
+                                            <directionalLight position={[-2, 5, 2]} intensity={1} />
+                                            <Suspense fallback={null}>
+                                                <Sphere></Sphere>
+                                            </Suspense>
+                                        </Canvas>
                                         <div className="detail-title-container detail-header">
                                             <h1 className='detail-header-text'>{project.title}</h1>
                                             <div className="detail-title-divider"></div>

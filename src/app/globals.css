@@ -530,3 +530,7 @@ nav.sticky-nav {
 .obstacle-row {
   height: 75vh;
 }
+
+div.canvas {
+  height: 30% !important;
+}
