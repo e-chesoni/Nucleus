@@ -7,8 +7,9 @@ import Image from 'next/image';
 import { Canvas } from "@react-three/fiber";
 import Box from "../../../components/detail/Box";
 import Sphere from "../../../components/detail/AnimatedSphere";
+import Iphone from "../../../components/detail/Iphone";
 import { extend } from '@react-three/fiber'
-import { OrbitControls, TransformControls } from '@react-three/drei';
+import { OrbitControls, TransformControls, useGLTF } from '@react-three/drei';
 extend({ OrbitControls, TransformControls })
 
 import React, { Suspense } from "react";
@@ -16,13 +17,10 @@ import React, { Suspense } from "react";
 import { DetailNavBar } from '../../../components/detail/DetailNavBar';
 import { DetailFooter } from '../../../components/detail/DetailFooter';
 import { projects } from "../../projects";
-import { ProjectCard } from '@/components/ProjectCard';
 import { StickyHeader } from '../../../components/detail/StickyHeader';
 import { How } from '../../../components/detail/How';
 import { BuildElement } from '../../../components/detail/BuildElement';
-import { Obstacle } from "../../../components/detail/Obstacle";
 import { Conclusion } from "../../../components/detail/Conclusion";
-
 
 export default function Page({ params } : { params: { project: string }}) {
     console.log(params.project);
@@ -43,7 +41,15 @@ export default function Page({ params } : { params: { project: string }}) {
                                             <ambientLight intensity={0.5}/>
                                             <directionalLight position={[-2, 5, 2]} intensity={1} />
                                             <Suspense fallback={null}>
-                                                <Sphere></Sphere>
+                                                <Sphere />
+                                            </Suspense>
+                                        </Canvas>
+                                        <Canvas className='canvas'>
+                                            <OrbitControls enableZoom={false} />
+                                            <ambientLight intensity={0.5}/>
+                                            <directionalLight position={[-2, 5, 2]} intensity={1} />
+                                            <Suspense fallback={null}>
+                                                <Iphone/>
                                             </Suspense>
                                         </Canvas>
                                         <div className="detail-title-container detail-header">
