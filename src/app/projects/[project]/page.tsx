@@ -8,6 +8,7 @@ import { Canvas } from "@react-three/fiber";
 import Box from "../../../components/detail/Box";
 import Sphere from "../../../components/detail/AnimatedSphere";
 import Iphone from "../../../components/detail/Iphone";
+import Magikarp from "../../../components/detail/Magikarp";
 import { extend } from '@react-three/fiber'
 import { OrbitControls, TransformControls, useGLTF } from '@react-three/drei';
 extend({ OrbitControls, TransformControls })
@@ -40,16 +41,20 @@ export default function Page({ params } : { params: { project: string }}) {
                                             <OrbitControls enableZoom={false} />
                                             <ambientLight intensity={0.5}/>
                                             <directionalLight position={[-2, 5, 2]} intensity={1} />
+                                            <directionalLight position={[0, -5, 3]} intensity={1} />
+                                            <directionalLight position={[5, 5, 2]} intensity={1} />
                                             <Suspense fallback={null}>
                                                 <Sphere />
                                             </Suspense>
                                         </Canvas>
                                         <Canvas className='canvas'>
                                             <OrbitControls enableZoom={false} />
-                                            <ambientLight intensity={0.5}/>
+                                            <ambientLight intensity={0.7}/>
                                             <directionalLight position={[-2, 5, 2]} intensity={1} />
+                                            <directionalLight position={[5, 1, 2]} intensity={5} />
+                                            <directionalLight position={[0, -5, 3]} intensity={1} />
                                             <Suspense fallback={null}>
-                                                <Iphone/>
+                                                <Magikarp/>
                                             </Suspense>
                                         </Canvas>
                                         <div className="detail-title-container detail-header">
