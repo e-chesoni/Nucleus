@@ -10,7 +10,7 @@ import Sphere from "../../../components/detail/AnimatedSphere";
 import Iphone from "../../../components/detail/Iphone";
 import Magikarp from "../../../components/detail/Magikarp";
 import { extend } from '@react-three/fiber'
-import { OrbitControls, TransformControls, useGLTF } from '@react-three/drei';
+import { OrbitControls, PerspectiveCamera, TransformControls, useGLTF } from '@react-three/drei';
 extend({ OrbitControls, TransformControls })
 
 import React, { Suspense } from "react";
@@ -37,18 +37,6 @@ export default function Page({ params } : { params: { project: string }}) {
                                 <main className='bg-detail'>
                                     <DetailNavBar/>
                                     <div className='detail-intro-container'>
-                                        <Canvas className='canvas'>
-                                            <OrbitControls enableZoom={false} />
-                                            <ambientLight intensity={0.5}/>
-                                            <pointLight color={'#FFA500'} position={[-2, 5, 2]} intensity={5} distance={0}/>
-                                            <directionalLight position={[-2, 5, 2]} intensity={1} />
-                                            <pointLight color={'#FFA500'} position={[5, -2, 2]} intensity={5} distance={0}/>
-                                            <pointLight color={'#FFA500'} position={[0, -5, 3]} intensity={5} distance={0}/>
-                                            <pointLight color={'#FFA500'} position={[0, 1, 0]} intensity={5} distance={0}/>
-                                            <Suspense fallback={null}>
-                                                <Sphere />
-                                            </Suspense>
-                                        </Canvas>
                                         <Canvas className='canvas'>
                                             <OrbitControls enableZoom={false} />
                                             <ambientLight intensity={0.7}/>
