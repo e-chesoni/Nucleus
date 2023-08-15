@@ -9,6 +9,7 @@ import Box from "../../../components/detail/Box";
 import Sphere from "../../../components/detail/AnimatedSphere";
 import Iphone from "../../../components/detail/Iphone";
 import Magikarp from "../../../components/detail/Magikarp";
+import BEM01 from "../../../components/detail/BEM-01";
 import { extend } from '@react-three/fiber'
 import { OrbitControls, PerspectiveCamera, TransformControls, useGLTF } from '@react-three/drei';
 extend({ OrbitControls, TransformControls })
@@ -47,7 +48,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                             <pointLight color={'#FFA500'} position={[0, 0, 0]} intensity={5000} distance={0}/>
                                             <pointLight color={'#FFA500'} position={[0, 2, 0]} intensity={5000} distance={0}/>
                                             <Suspense fallback={null}>
-                                                <Magikarp/>
+                                                <BEM01/>
                                             </Suspense>
                                         </Canvas>
                                         <div className="detail-title-container detail-header">
