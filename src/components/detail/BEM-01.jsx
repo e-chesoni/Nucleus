@@ -10,7 +10,7 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('/BEM-01.glb')
   return (
     <group {...props} dispose={null}>
-      <group rotation={[0.6, -0.9, 0]} scale={0.017}>
+      <group rotation={[0.5, -0.5, 0]} scale={0.017}>
         <mesh geometry={nodes.BEM01_v17_1.geometry} material={materials['Glass_-_Heavy_Color']} />
         <mesh geometry={nodes.BEM01_v17_2.geometry} material={materials['Glass_-_Heavy_Color_(Blue)']} />
         <mesh geometry={nodes.BEM01_v17_3.geometry} material={materials['Opaque(127,127,127)']} />
@@ -22,14 +22,14 @@ export default function Model(props) {
         <mesh geometry={nodes.BEM01_v17_9.geometry} material={materials['Opaque(202,209,238)']} />
         <mesh geometry={nodes.BEM01_v17_10.geometry} material={materials['Opaque(2,61,210)']} />
         <mesh geometry={nodes.BEM01_v17_11.geometry} material={materials['Steel_-_Satin']} />
-        <mesh geometry={nodes.BEM01_v17_12.geometry} material={materials['Polymide_(Kapton)']} />
+        <mesh geometry={nodes.BEM01_v17_12.geometry} material={materials['Glass_-_Heavy_Color_(Blue)']} />
         <mesh geometry={nodes.BEM01_v17_13.geometry} material={materials['Opaque(25,25,25)']} />
         <mesh geometry={nodes.BEM01_v17_14.geometry} material={materials['Opaque(160,160,160)']} />
         <mesh geometry={nodes.BEM01_v17_15.geometry} material={materials['Opaque(153,130,94)']} />
         <mesh geometry={nodes.BEM01_v17_16.geometry} material={materials['Opaque(68,119,102)']} />
         <mesh geometry={nodes.BEM01_v17_17.geometry} material={materials['Opaque(244,229,167)']} />
         <mesh geometry={nodes.BEM01_v17_18.geometry} material={materials['Opaque(230,230,230)']} />
-        <mesh geometry={nodes.BEM01_v17_19.geometry} material={materials['Paek_(Beige)']} />
+        <mesh geometry={nodes.BEM01_v17_19.geometry} material={materials['Glass_-_Heavy_Color_(Blue)']} />
         <mesh geometry={nodes.BEM01_v17_20.geometry} material={materials['Opaque(105,105,105)']} />
         <mesh geometry={nodes.BEM01_v17_21.geometry} material={materials['Opaque(88,88,88)']} />
         <mesh geometry={nodes.BEM01_v17_22.geometry} material={materials['Opaque(255,225,0)']} />
