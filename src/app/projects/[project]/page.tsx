@@ -40,11 +40,12 @@ export default function Page({ params } : { params: { project: string }}) {
                                         <Canvas className='canvas'>
                                             <OrbitControls enableZoom={false} />
                                             <ambientLight intensity={0.7}/>
-                                            <pointLight color={'#FFA500'} position={[-2, 5, 2]} intensity={1} distance={0}/>
-                                            <pointLight color={'#FFA500'} position={[5, -2, 2]} intensity={5} distance={0}/>
-                                            <pointLight color={'#FFA500'} position={[0, -5, 3]} intensity={5} distance={0}/>
-                                            <pointLight color={'#FFA500'} position={[0, 1, 0]} intensity={5} distance={0}/>
-                                            <pointLight color={'#FFA500'} position={[0, 2, 0]} intensity={5} distance={0}/>
+                                            <pointLight color={'#FFA500'} position={[-2, 5, 2]} intensity={1000} distance={0}/>
+                                            <pointLight color={'#FFA500'} position={[5, 0, 2]} intensity={5000} distance={0}/>
+                                            <pointLight color={'#FFA500'} position={[-5, 0, 0]} intensity={5000} distance={0}/>
+                                            <pointLight color={'#FFA500'} position={[0, -5, 3]} intensity={5000} distance={0}/>
+                                            <pointLight color={'#FFA500'} position={[0, 0, 0]} intensity={5000} distance={0}/>
+                                            <pointLight color={'#FFA500'} position={[0, 2, 0]} intensity={5000} distance={0}/>
                                             <Suspense fallback={null}>
                                                 <Magikarp/>
                                             </Suspense>
