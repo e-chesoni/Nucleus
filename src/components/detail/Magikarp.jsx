@@ -10,7 +10,7 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('/Magikarp.glb')
   return (
     <group {...props} dispose={null}>
-      <group position={[0, 0.02, 0]} rotation={[0.7,-0.5,0]} scale={0.03}>
+      <group position={[0, 0.02, 0]} rotation={[0.7,-0.7,0]} scale={0.03}>
         <mesh geometry={nodes.Magikarp_v61_1.geometry} material={materials['Plastic_-_Glossy_(Black)']} />
         <mesh geometry={nodes.Magikarp_v61_2.geometry} material={materials['Aluminum_-_Satin']} />
         <mesh geometry={nodes.Magikarp_v61_3.geometry} material={materials.KaptonTape} />
