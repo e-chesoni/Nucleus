@@ -36,6 +36,8 @@ next-env.d.ts
 
 # large files
 *public/BEM-01.glb
+*public/BEM-01Light.glb
+*public/MagikarpLight.glb
 
 # debug log
 debug.log
