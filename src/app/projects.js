@@ -54,6 +54,8 @@ import magikarp_default_orange from "../assets/img/detail/magikarp/Magikarp_Defa
 import magikarp_default from "../assets/img/detail/magikarp/Magikarp_Default-removebg.png"
 import magikarp_side from "../assets/img/detail/magikarp/Magikarp_Side-removebg.png"
 import magikarp_top from "../assets/img/detail/magikarp/Magikarp_Top-removebg.png"
+import magikarp_PCB from "../assets/img/detail/magikarp/MagikarpPCB-removebg.png"
+import controller_PCB from "../assets/img/detail/magikarp/ControllerPCB-removebg.png"
 
 export const projects = [
     {
@@ -246,16 +248,20 @@ export const projects = [
             {
                 imgs: [
                     {
+                        img: magikarp_PCB,
+                        desc: "pcb something"
+                    },
+                    {
+                        img: controller_PCB,
+                        desc: "controller something"
+                    },
+                    {
                         img: magikarp_default_orange,
                         desc: "something"
                     },
                     {
                         img: magikarp_top,
                         desc: "second something"
-                    },
-                    {
-                        img: magikarp_default,
-                        desc: "third thing else"
                     },
                     {
                         img: magikarp_side,
