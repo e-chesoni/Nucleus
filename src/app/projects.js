@@ -5,7 +5,6 @@ import magneto_printing_original from "../assets/img/background/magneto/magneto-
 import magneto_printing from "../assets/img/background/magneto/magneto-printing-gradient.png";
 
 import bemo from "../assets/img/background/bemo/bemo.jpeg";
-import bemo_side from "../assets/img/background/bemo/bem01-side.jpeg";
 import bemo_desk_original from "../assets/img/background/bemo/chris-obrist-9X1VJKrz1lU-unsplash.jpg";
 import bemo_components_original from "../assets/img/background/bemo/robin-glauser-aSvBypuXGkc-unsplash.jpg";
 import bemo_testing_original from "../assets/img/background/bemo/tim-kabel-FCrYdP8gohg-unsplash.jpg";
@@ -45,6 +44,16 @@ import typescript from "../assets/img/skill/typescript-skill.svg";
 import vscode from "../assets/img/skill/vs-code-skill.svg";
 import vs from "../assets/img/skill/vs-skill.svg";
 
+// Images
+import bemo_default from "../assets/img/detail/bemo/BEM-01_Default-removebg.png";
+import bemo_front from "../assets/img/detail/bemo/BEM-01_Front-removebg.png";
+import bemo_bottom from "../assets/img/detail/bemo/BEM-01_Bottom-removebg.png";
+import bemo_side from "../assets/img/detail/bemo/BEM-01_Side-removebg.png";
+
+import magikarp_default_orange from "../assets/img/detail/magikarp/Magikarp_Default_View_Orange-removebg.png"
+import magikarp_default from "../assets/img/detail/magikarp/Magikarp_Default-removebg.png"
+import magikarp_side from "../assets/img/detail/magikarp/Magikarp_Side-removebg.png"
+import magikarp_top from "../assets/img/detail/magikarp/Magikarp_Top-removebg.png"
 
 export const projects = [
     {
@@ -54,6 +63,28 @@ export const projects = [
         tagline: "first tagline",
         imgUrl: bemo_desk,
         iconUrl: car_white,
+        carousel: [
+            {
+                imgs: [
+                    {
+                        img: bemo_default,
+                        desc: "something"
+                    },
+                    {
+                        img: bemo_front,
+                        desc: "second something"
+                    },
+                    {
+                        img: bemo_bottom,
+                        desc: "third thing else"
+                    },
+                    {
+                        img: bemo_side,
+                        desc: "fourth else"
+                    },
+                ]
+            },
+        ],
         skills: [ 
             {
                 skillUrl: cpp,
@@ -211,6 +242,28 @@ export const projects = [
         tagline: "second tagline",
         imgUrl: bemo_components,
         iconUrl: fish_white,
+        carousel: [
+            {
+                imgs: [
+                    {
+                        img: magikarp_default_orange,
+                        desc: "something"
+                    },
+                    {
+                        img: magikarp_top,
+                        desc: "second something"
+                    },
+                    {
+                        img: magikarp_default,
+                        desc: "third thing else"
+                    },
+                    {
+                        img: magikarp_side,
+                        desc: "fourth else"
+                    },
+                ]
+            },
+        ],
         skills: [ 
             {
                 skillUrl: cpp,
@@ -298,6 +351,18 @@ export const projects = [
         tagline: "fourth tagline",
         imgUrl: code,
         iconUrl: cloud_white,
+        carousel: [
+            {
+                imgs: [
+                    {
+                        img: bemo_default
+                    },
+                    {
+                        img: bemo_front
+                    },
+                ]
+            },
+        ],
         skills: [ 
             {
                 skillUrl: csharp,
@@ -385,6 +450,18 @@ export const projects = [
         tagline: "third tagline",
         imgUrl: magneto_printing,
         iconUrl: magneto_helment_white,
+        carousel: [
+            {
+                imgs: [
+                    {
+                        img: bemo_default
+                    },
+                    {
+                        img: bemo_front
+                    },
+                ]
+            },
+        ],
         skills: [ 
             {
                 skillUrl: csharp,
@@ -472,6 +549,18 @@ export const projects = [
         tagline: "third tagline",
         imgUrl: pcb,
         iconUrl: bike_white,
+        carousel: [
+            {
+                imgs: [
+                    {
+                        img: bemo_default
+                    },
+                    {
+                        img: bemo_front
+                    },
+                ]
+            },
+        ],
         skills: [ 
             {
                 skillUrl: c,

@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 import Image from 'next/image';
 
+import { useState } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+
 import { Canvas } from "@react-three/fiber";
 import Box from "../../../components/detail/Box";
 import Sphere from "../../../components/detail/AnimatedSphere";
@@ -25,9 +28,13 @@ import { StickyHeader } from '../../../components/detail/StickyHeader';
 import { How } from '../../../components/detail/How';
 import { BuildElement } from '../../../components/detail/BuildElement';
 import { Conclusion } from "../../../components/detail/Conclusion";
+import { ProjectCarousel } from "../../../components/detail/ProjectCarousel";
+
+import testimg from '../../../assets/img/detail/bemo/BEM-01_Default-removebg.png'
 
 export default function Page({ params } : { params: { project: string }}) {
     console.log(params.project);
+    
     return (
         <div>
             {
@@ -40,42 +47,42 @@ export default function Page({ params } : { params: { project: string }}) {
                                 <main className='bg-detail'>
                                     <DetailNavBar/>
                                     <div className='detail-intro-container'>
-                                    {
-                                        project.how.map((how, index) => {
-                                            if (index === 0 && project.title === 'magikarp')
-                                            {
-                                                return (
-                                                    <Canvas className='canvas'>
-                                                        <OrbitControls enableZoom={false} />
-                                                        <ambientLight intensity={0.7}/>
-                                                        <pointLight color={'#FFA500'} position={[0, -5, 3]} intensity={500} distance={0}/>
-                                                        <pointLight color={'#FFA500'} position={[0, 0, 0]} intensity={2500} distance={0}/>
-                                                        <pointLight color={'#FFA500'} position={[0, 2, 0]} intensity={250} distance={0}/>
-                                                        <Suspense fallback={null}>
-                                                            <MagikarpLight/>
-                                                        </Suspense>
-                                                    </Canvas>
-                                                )
-                                            } else if (index === 0 && project.title === 'Bem-0')
-                                            {
-                                                return (
-                                                    <Canvas className='canvas'>
-                                                        <OrbitControls enableZoom={false} />
-                                                        <ambientLight intensity={0.7}/>
-                                                        <pointLight color={'#FFA500'} position={[-2, 5, 2]} intensity={1000} distance={0}/>
-                                                        <pointLight color={'#FFA500'} position={[5, 0, 2]} intensity={5000} distance={0}/>
-                                                        <pointLight color={'#FFA500'} position={[-5, 0, 0]} intensity={5000} distance={0}/>
-                                                        <pointLight color={'#FFA500'} position={[0, -5, 3]} intensity={5000} distance={0}/>
-                                                        <pointLight color={'#FFA500'} position={[0, 0, 0]} intensity={5000} distance={0}/>
-                                                        <pointLight color={'#FFA500'} position={[0, 2, 0]} intensity={5000} distance={0}/>
-                                                        <Suspense fallback={null}>
-                                                            <BEM01Light/>
-                                                        </Suspense>
-                                                    </Canvas>
-                                                )
-                                            }
-                                        })
-                                    }
+                                        {
+                                            project.how.map((how, index) => {
+                                                if (index === 0 && project.title === 'magikarp')
+                                                {
+                                                    return (
+                                                        <Canvas className='canvas'>
+                                                            <OrbitControls enableZoom={false} />
+                                                            <ambientLight intensity={0.7}/>
+                                                            <pointLight color={'#FFA500'} position={[0, -5, 3]} intensity={500} distance={0}/>
+                                                            <pointLight color={'#FFA500'} position={[0, 0, 0]} intensity={2500} distance={0}/>
+                                                            <pointLight color={'#FFA500'} position={[0, 2, 0]} intensity={250} distance={0}/>
+                                                            <Suspense fallback={null}>
+                                                                <MagikarpLight/>
+                                                            </Suspense>
+                                                        </Canvas>
+                                                    )
+                                                } else if (index === 0 && project.title === 'Bem-0')
+                                                {
+                                                    return (
+                                                        <Canvas className='canvas'>
+                                                            <OrbitControls enableZoom={false} />
+                                                            <ambientLight intensity={0.7}/>
+                                                            <pointLight color={'#FFA500'} position={[-2, 5, 2]} intensity={1000} distance={0}/>
+                                                            <pointLight color={'#FFA500'} position={[5, 0, 2]} intensity={5000} distance={0}/>
+                                                            <pointLight color={'#FFA500'} position={[-5, 0, 0]} intensity={5000} distance={0}/>
+                                                            <pointLight color={'#FFA500'} position={[0, -5, 3]} intensity={5000} distance={0}/>
+                                                            <pointLight color={'#FFA500'} position={[0, 0, 0]} intensity={5000} distance={0}/>
+                                                            <pointLight color={'#FFA500'} position={[0, 2, 0]} intensity={5000} distance={0}/>
+                                                            <Suspense fallback={null}>
+                                                                <BEM01Light/>
+                                                            </Suspense>
+                                                        </Canvas>
+                                                    )
+                                                }
+                                            })
+                                        }
                                         
                                         <div className="detail-title-container detail-header">
                                             <h1 className='detail-header-text'>{project.title}</h1>
@@ -102,6 +109,16 @@ export default function Page({ params } : { params: { project: string }}) {
                                                             />
                                                         )
                                                     } 
+                                                })
+                                            }
+                                            {
+                                                project.carousel.map((carousel, index) => {
+                                                    return (
+                                                        <ProjectCarousel
+                                                            key={index}
+                                                            {...carousel}
+                                                        />
+                                                    )
                                                 })
                                             }
                                         </div>
