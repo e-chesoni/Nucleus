@@ -3,8 +3,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 import Image from 'next/image';
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 
 import React, { useState, useEffect, useRef, Suspense } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
@@ -32,43 +30,11 @@ import { ProjectCarousel } from "../../../components/detail/ProjectCarousel";
 
 import ReactDOM from 'react-dom';
 import { Fade } from 'react-bootstrap';
+import FadeInOnScroll from '@/components/detail/FadeInOnScroll';
+import FadeInOnScrollDefault from '@/components/detail/FadeInOnScrollDefault';
 
 export default function Page({ params } : { params: { project: string }}) {
     console.log(params.project);
-
-    interface Props {
-        targetHeight: number;
-        children: React.ReactNode;
-    }
-
-    const FadeInOnScroll: React.FC<Props> = ({ targetHeight, children }) => {
-        const [isVisible, setIsVisible] = useState(false);
-        const elementRef = useRef<HTMLDivElement | null>(null);
-
-        const handleScroll = () => {
-            const scrollY = window.scrollY || window.pageYOffset;
-            setIsVisible(scrollY >= targetHeight);
-        };
-
-        useEffect(() => {
-            window.addEventListener('scroll', handleScroll);
-            return () => {
-                window.removeEventListener('scroll', handleScroll);
-            };
-        }, []);
-
-        useEffect(() => {
-            if (elementRef.current) {
-              console.log('Element height:', elementRef.current.clientHeight);
-            }
-          }, [isVisible]);
-
-        return (
-            <div className={`fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>
-                { children }
-            </div>
-        )
-    }
     
     return (
         <div>
@@ -147,10 +113,8 @@ export default function Page({ params } : { params: { project: string }}) {
                                                 })
                                             } 
                                         </div>
-                                        <FadeInOnScroll targetHeight={800}>
-                                            <div>Hello</div>
-                                        </FadeInOnScroll>
-                                        <FadeInOnScroll targetHeight={800}>
+
+                                        <FadeInOnScrollDefault elementName='ProjectCarousel'>
                                         <div className='detail-carousel-container'>
                                             {
                                                 project.carousel.map((carousel, index) => {
@@ -163,9 +127,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                                 })
                                             }
                                         </div>
-                                        </FadeInOnScroll>
-                                        
-                                        
+                                        </FadeInOnScrollDefault>
                                         <div className="detail-obstacles-container detail-text">
                                             <h3 className="detail-how-sub-header">Challenges</h3>
                                             {
@@ -177,11 +139,13 @@ export default function Page({ params } : { params: { project: string }}) {
                                                                 key={index}
                                                                 {...how}
                                                             />
+                                                            
                                                         )
                                                     } 
                                                 })
                                             }
                                         </div>
+                                        
                                         <div className="detail-build-container detail-text">
                                             {/* Build */}
                                             <h3 className="detail-how-sub-header">Build</h3>
@@ -260,6 +224,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                                     })
                                                 }
                                     </div>
+                                    
                                     {/* TODO: DetailFooter */}
                                     <DetailFooter
                                             key={index}
