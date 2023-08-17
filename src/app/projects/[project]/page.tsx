@@ -6,7 +6,7 @@ import Image from 'next/image';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-import { useState } from 'react';
+import React, { useState, useEffect, useRef, Suspense } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 import { Canvas } from "@react-three/fiber";
@@ -20,8 +20,6 @@ import BEM01Light from "../../../components/detail/BEM-01Light";
 import { extend } from '@react-three/fiber'
 import { OrbitControls, PerspectiveCamera, TransformControls, useGLTF } from '@react-three/drei';
 extend({ OrbitControls, TransformControls })
-
-import React, { Suspense } from "react";
 
 import { DetailNavBar } from '../../../components/detail/DetailNavBar';
 import { DetailFooter } from '../../../components/detail/DetailFooter';
@@ -37,6 +35,40 @@ import { Fade } from 'react-bootstrap';
 
 export default function Page({ params } : { params: { project: string }}) {
     console.log(params.project);
+
+    interface Props {
+        targetHeight: number;
+        children: React.ReactNode;
+    }
+
+    const FadeInOnScroll: React.FC<Props> = ({ targetHeight, children }) => {
+        const [isVisible, setIsVisible] = useState(false);
+        const elementRef = useRef<HTMLDivElement | null>(null);
+
+        const handleScroll = () => {
+            const scrollY = window.scrollY || window.pageYOffset;
+            setIsVisible(scrollY >= targetHeight);
+        };
+
+        useEffect(() => {
+            window.addEventListener('scroll', handleScroll);
+            return () => {
+                window.removeEventListener('scroll', handleScroll);
+            };
+        }, []);
+
+        useEffect(() => {
+            if (elementRef.current) {
+              console.log('Element height:', elementRef.current.clientHeight);
+            }
+          }, [isVisible]);
+
+        return (
+            <div className={`fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>
+                { children }
+            </div>
+        )
+    }
     
     return (
         <div>
@@ -115,12 +147,10 @@ export default function Page({ params } : { params: { project: string }}) {
                                                 })
                                             } 
                                         </div>
-                                        <TrackVisibility>
-                                        {({isVisible}) => 
-                                            <div className={isVisible ? "detail-carousel-container show" : "detail-carousel-container hidden"}>Hello</div>
-
-                                        }
-                                        </TrackVisibility>
+                                        <FadeInOnScroll targetHeight={800}>
+                                            <div>Hello</div>
+                                        </FadeInOnScroll>
+                                        <FadeInOnScroll targetHeight={800}>
                                         <div className='detail-carousel-container'>
                                             {
                                                 project.carousel.map((carousel, index) => {
@@ -133,6 +163,8 @@ export default function Page({ params } : { params: { project: string }}) {
                                                 })
                                             }
                                         </div>
+                                        </FadeInOnScroll>
+                                        
                                         
                                         <div className="detail-obstacles-container detail-text">
                                             <h3 className="detail-how-sub-header">Challenges</h3>
