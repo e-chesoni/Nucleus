@@ -3,6 +3,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 import Image from 'next/image';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
@@ -30,7 +32,8 @@ import { BuildElement } from '../../../components/detail/BuildElement';
 import { Conclusion } from "../../../components/detail/Conclusion";
 import { ProjectCarousel } from "../../../components/detail/ProjectCarousel";
 
-import testimg from '../../../assets/img/detail/bemo/BEM-01_Default-removebg.png'
+import ReactDOM from 'react-dom';
+import { Fade } from 'react-bootstrap';
 
 export default function Page({ params } : { params: { project: string }}) {
     console.log(params.project);
@@ -110,7 +113,15 @@ export default function Page({ params } : { params: { project: string }}) {
                                                         )
                                                     } 
                                                 })
-                                            }
+                                            } 
+                                        </div>
+                                        <TrackVisibility>
+                                        {({isVisible}) => 
+                                            <div className={isVisible ? "detail-carousel-container show" : "detail-carousel-container hidden"}>Hello</div>
+
+                                        }
+                                        </TrackVisibility>
+                                        <div className='detail-carousel-container'>
                                             {
                                                 project.carousel.map((carousel, index) => {
                                                     return (
@@ -122,6 +133,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                                 })
                                             }
                                         </div>
+                                        
                                         <div className="detail-obstacles-container detail-text">
                                             <h3 className="detail-how-sub-header">Challenges</h3>
                                             {

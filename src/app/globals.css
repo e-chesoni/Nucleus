@@ -73,6 +73,7 @@
   font-family: RobotoMonoItalic;
   src: url(../assets/fonts/static/RobotoMono-LightItalic.ttf);
 }
+
 /************** Default CSS **************/
 
 body {
@@ -88,10 +89,12 @@ body {
 }
 
 /* Palette 2 Colors Start */
+
 .bg-main-top {
   background-color: #051015;
   /* background-image: linear-gradient(#152238, #192841); */
 }
+
 /* Palette 2 Colors End */
 
 .intro {
@@ -452,11 +455,15 @@ nav.sticky-nav {
 }
 
 .detail-header, .detail-sticky-header {
-  padding: 30px 30px 0px 35px;
+  padding: 0px 30px 0px 35px;
 }
 
 .detail-how-intro {
-  height: 100vh;
+  height: 30vh;
+}
+
+.detail-carousel-container {
+
 }
 
 .detail-how-container {
@@ -464,7 +471,7 @@ nav.sticky-nav {
 
 .detail-sticky-header {
   position: sticky;
-  top: 8vh;
+  top: 6vh;
 }
 
 .detail-how-sub-header {
@@ -492,7 +499,7 @@ nav.sticky-nav {
 }
 
 .detail-text {
-  padding: 0px 30px 30px 35px;
+  padding: 30px 30px 30px 35px;
   color: #DDDFE1;
   font-size: medium;
 }
@@ -533,4 +540,20 @@ nav.sticky-nav {
 
 div.canvas {
   height: 30% !important;
+}
+
+/************** Fade In/Out CSS **************/
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50vh);
+  visibility: hidden;
+  transition: opacity 12000ms ease-out, transform 6000ms ease-out,
+    visibility 12000ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+
+.show {
+  opacity: 1;
+  transition: 10s;
 }
