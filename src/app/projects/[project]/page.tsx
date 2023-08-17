@@ -114,7 +114,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                             } 
                                         </div>
 
-                                        <FadeInOnScrollDefault elementName='ProjectCarousel'>
+                                        <FadeInOnScrollDefault elementName='ProjectCarousel' visibilityThreshold={0.3}>
                                         <div className='detail-carousel-container'>
                                             {
                                                 project.carousel.map((carousel, index) => {

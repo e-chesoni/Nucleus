@@ -6,7 +6,7 @@ export const Paragraph = ({ order, text }) => {
     console.log(order);
     return (
             <Col className="paragraph-col">
-        <FadeInOnScrollDefault elementName="Paragraph">
+        <FadeInOnScrollDefault elementName="Paragraph" visibilityThreshold={0.3}>
 
                 <p>{text}</p>
         </FadeInOnScrollDefault>
