@@ -4,7 +4,7 @@ import { Obstacle } from "./Obstacle";
 
 export const StickyHeader = ({ summary }) => {
     return (
-        <Row className="sticky-header-col">
+        <Row className="">
             <p>{summary}</p>
         </Row>
     )

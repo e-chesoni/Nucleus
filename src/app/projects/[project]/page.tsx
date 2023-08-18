@@ -128,6 +128,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                             }
                                         </div>
                                         </FadeInOnScrollDefault>
+                                        
                                         <div className="detail-obstacles-container detail-text">
                                             <h3 className="detail-how-sub-header">Challenges</h3>
                                             {
@@ -139,7 +140,6 @@ export default function Page({ params } : { params: { project: string }}) {
                                                                 key={index}
                                                                 {...how}
                                                             />
-                                                            
                                                         )
                                                     } 
                                                 })
