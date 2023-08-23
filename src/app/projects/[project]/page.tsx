@@ -114,7 +114,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                             } 
                                         </div>
 
-                                        <FadeInOnScrollDefault elementName='ProjectCarousel' visibilityThreshold={0.3} exitThreshold={0.3} isTitle={false}>
+                                        <FadeInOnScrollDefault elementName='ProjectCarousel' visibilityThreshold={0.3} exitThreshold={0.3} titleRank={0}>
                                         <div className='detail-carousel-container'>
                                             {
                                                 project.carousel.map((carousel, index) => {
@@ -131,7 +131,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                         
                                         <div className="detail-obstacles-container detail-text">
                                         
-                                        <FadeInOnScrollDefault elementName='Challenges' visibilityThreshold={0.25} exitThreshold={0.25} isTitle={true}>
+                                        <FadeInOnScrollDefault elementName='Challenges' visibilityThreshold={0.25} exitThreshold={0.25} titleRank={3}>
                                             {/* className moved to FadeInOnScrollDefault File */}
                                             <h3>Challenges</h3>
                                         </FadeInOnScrollDefault>
@@ -152,7 +152,10 @@ export default function Page({ params } : { params: { project: string }}) {
                                         
                                         <div className="detail-build-container detail-text">
                                             {/* Build */}
-                                            <h3 className="detail-how-sub-header">Build</h3>
+                                        <FadeInOnScrollDefault elementName='Challenges' visibilityThreshold={0.25} exitThreshold={0.25} titleRank={3}>
+                                            {/* className moved to FadeInOnScrollDefault File */}
+                                            <h3>Build</h3>
+                                        </FadeInOnScrollDefault>
                                             <div className="detail-build-mechanical-container">
                                                 {/* Mechanical */}
                                                 {
