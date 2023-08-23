@@ -34,8 +34,6 @@ import FadeInOnScroll from '@/components/detail/FadeInOnScroll';
 import FadeInOnScrollDefault from '@/components/detail/FadeInOnScrollDefault';
 
 export default function Page({ params } : { params: { project: string }}) {
-    console.log(params.project);
-    
     return (
         <div>
             {
