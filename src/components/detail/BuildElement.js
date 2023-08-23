@@ -7,7 +7,7 @@ export const BuildElement = ({ section, modules, paragraphs }) => {
     return (
         <Col className="build-element-col">
             <FadeInOnScrollDefault elementName='ObstacleTitle' visibilityThreshold={0.27} exitThreshold={0.27} titleRank={4}>
-                <h4 className="detail-how-sub-section-header">{section}</h4>
+                <h4>{section}</h4>
             </FadeInOnScrollDefault>
             <Row>
                 <div>

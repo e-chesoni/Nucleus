@@ -463,7 +463,12 @@ nav.sticky-nav {
 }
 
 .detail-carousel-container {
-  height: 70vh;
+  height: 100vh;
+}
+
+.detail-sticky-carousel {
+  position: sticky;
+  top: 35vh;
 }
 
 .detail-how-container {
@@ -477,22 +482,15 @@ nav.sticky-nav {
 .detail-how-sub-header {
   padding: 30px 30px 30px 0px;
   position: sticky;
-  top: 25vh;
-}
-
-.conclusion-header {
-  padding: 30px 30px 30px 0px;
-  position: sticky;
-  top: 0vh;
+  top: 27vh;
 }
 
 .detail-how-sub-section-header {
   padding: 30px 30px 30px 0px;
   position: sticky;
-  top: 30vh;
+  top: 33vh;
   text-transform: capitalize;
 }
-
 
 .detail-header-text {
   text-transform: uppercase;
@@ -510,6 +508,12 @@ nav.sticky-nav {
   margin-bottom: 20px;
   background-color: #FF5400;
   border-radius: 30%;
+}
+
+.conclusion-header {
+  padding: 30px 30px 30px 0px;
+  position: sticky;
+  top: 0vh;
 }
 
 .detail-foot-divider {
@@ -545,7 +549,7 @@ nav.sticky-nav {
 .sticky-p {
   padding: 30px 30px 30px 0px;
   position: sticky;
-  top: 40vh;
+  top: 42vh;
 }
 
 .sticky-mod {
