@@ -466,6 +466,10 @@ nav.sticky-nav {
   height: 100vh;
 }
 
+.carousel-item {
+  height: 50vh;
+}
+
 .detail-sticky-carousel {
   position: sticky;
   top: 35vh;
