@@ -6,10 +6,11 @@ export const Paragraph = ({ order, text }) => {
     console.log(order);
     return (
             <Col className="paragraph-col">
-        <FadeInOnScrollDefault elementName="Paragraph" visibilityThreshold={0.3}>
-
-                <p>{text}</p>
-        </FadeInOnScrollDefault>
+                <FadeInOnScrollDefault elementName="Paragraph" visibilityThreshold={0.1} exitThreshold={0.1}>
+                <div className="desc-container">
+                    <div className="sticky-p">{text}</div>
+                </div>
+                </FadeInOnScrollDefault>
 
             </Col>
     )

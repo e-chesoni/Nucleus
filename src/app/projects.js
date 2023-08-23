@@ -159,18 +159,26 @@ export const projects = [
                 paragraphs: [
                     {
                         order:  1,
-                        text: "BEM-01 was designed to work with one MCU. The electrical design required 5 pins for eachmotor (4 without the encoder), 2 pins for each ToF sensor, 1 pin for each IR sensor, and 1 pinfor each Vive circuit. Using the ESP32 S3, we had just enough pins to accommodate our needs.BEM-01’s intended design leaned heavily on Vive coordinates. Initially, we assumed we wouldbe able to get relatively accurate and clean data from Vive (assuming we could create a suitablefilter). Our intention of mapping the field required the use of several time of flight sensors. We arranged them in an array such that the cones of their fields of view were tangential to each other. i.e. since the FoV was approximately 27◦, we 3d printed a mount so that eight sensors could beattached pointing 27◦ apart from one another.",
+                        text: "BEM-01 was designed to work with one MCU. The electrical design required 5 pins for eachmotor (4 without the encoder), 2 pins for each ToF sensor, 1 pin for each IR sensor, and 1 pin for each Vive circuit.",
                     },
                     {
-                        order:  2,
+                        order: 2,
+                        text: "Using the ESP32 S3, we had just enough pins to accommodate our needs.BEM-01s intended design leaned heavily on Vive coordinates. Initially, we assumed we wouldbe able to get relatively accurate and clean data from Vive (assuming we could create a suitablefilter).",
+                    },
+                    {
+                        order: 3,
+                        text: "Our intention of mapping the field required the use of several time of flight sensors. We arranged them in an array such that the cones of their fields of view were tangential to each other. i.e. since the FoV was approximately 27◦, we 3d printed a mount so that eight sensors could be attached pointing 27 apart from one another.",
+                    },
+                    {
+                        order:  4,
                         text: "BEM-01 was designed to operate with a single MCU. Our design required 5 pins for each motor (4 without the encoder), 2 pins for each ToF sensor, 1 pin for each IR sensor, and 1 pin for each Vive circuit. We selected the ESP32 S3 to accommodate our needs, since it had just enough pins.",
                     },
                     {
-                        order:  3,
+                        order:  5,
                         text: "We used an array of time-of-flight sensors to generate a virtual map of the field. We arranged them in an array such that the cones of their fields of view were tangential to each other. Since the FoV was approximately 27 degrees, we 3D printed a mount so that eight sensors could be attached, pointing 27 degrees apart from one another.",
                     },
                     {
-                        order: 4,
+                        order: 6,
                         text: "Finally, we utilized an IR detection circuit to find and track the real and fake trophies."
                     },
                 ]

@@ -152,7 +152,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                         
                                         <div className="detail-build-container detail-text">
                                             {/* Build */}
-                                        <FadeInOnScrollDefault elementName='Challenges' visibilityThreshold={0.25} exitThreshold={0.25} titleRank={3}>
+                                            <FadeInOnScrollDefault elementName='Challenges' visibilityThreshold={0.25} exitThreshold={0.25} titleRank={3}>
                                             {/* className moved to FadeInOnScrollDefault File */}
                                             <h3>Build</h3>
                                         </FadeInOnScrollDefault>
