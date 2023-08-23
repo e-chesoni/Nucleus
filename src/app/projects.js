@@ -243,7 +243,15 @@ export const projects = [
                     },
                     {
                         order:  2,
-                        text: "The Bem-0 project serves as a testament to my skills as an embedded engineer. Through designing and building a complex robotics project, I was able to demonstrate my strong understanding of microcontrollers, embedded software development, and low-level hardware interfaces. Additionally, the project highlighted the importance of problem-solving skills, as my team encountered numerous obstacles and had to employ creative solutions to overcome them. I was also able to showcase my specific programming skills in C++, knowledge of real-time operating systems, and experience with hardware design and schematic capture tools. Finally, the project demonstrates my ability to communicate technical concepts effectively, a crucial skill for any engineer.",
+                        text: "The Bem-0 project serves as a testament to my skills as an embedded engineer. Through designing and building a complex robotics project, I was able to demonstrate my strong understanding of microcontrollers, embedded software development, and low-level hardware interfaces.",
+                    },
+                    {
+                        order: 3,
+                        text: "Additionally, the project highlighted the importance of problem-solving skills, as my team encountered numerous obstacles and had to employ creative solutions to overcome them. I was also able to showcase my specific programming skills in C++, knowledge of real-time operating systems, and experience with hardware design and schematic capture tools.",
+                    },
+                    {
+                        order: 4,
+                        text: "Finally, the project demonstrates my ability to communicate technical concepts effectively, a crucial skill for any engineer.",
                     }
                 ]
             },

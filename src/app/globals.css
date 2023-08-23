@@ -554,6 +554,20 @@ nav.sticky-nav {
   top: 40vh;
 }
 
+.conclusion-container {
+  height: 110vh;
+}
+
+.last-conclusion-container {
+  height: 80vh;
+}
+
+.sticky-c {
+  padding: 30px 30px 30px 0px;
+  position: sticky;
+  top: 10vh;
+}
+
 div.canvas {
   height: 30% !important;
 }
