@@ -117,10 +117,14 @@ export const projects = [
                             },
                             {
                                 order:  2,
-                                text: "We encountered challenges with the accuracy of the Vive circuit, which varied depending on the setup, such as distance from the competition board and proximity to the Wi-Fi router. To improve the accuracy of our rover, I conducted research and discovered that changing a critical resistor in the Vive circuit would be effective. I then implemented a final design that allowed us to hot-swap the resistor as needed, resulting in significantly improved accuracy.",
+                                text: "We encountered challenges with the accuracy of the Vive circuit, which varied depending on the setup, such as distance from the competition board and proximity to the Wi-Fi router.",
                             },
                             {
-                                order:  3,
+                                order: 3,
+                                text: "To improve the accuracy of our rover, I conducted research and discovered that changing a critical resistor in the Vive circuit would be effective. I then implemented a final design that allowed us to hot-swap the resistor as needed, resulting in significantly improved accuracy.",
+                            },
+                            {
+                                order:  4,
                                 text: "As part of the team of three, I was responsible for designing, soldering, and integrating the location module in our final circuit. Additionally, I wrote the accompanying position tracking communication code, which required the use of two different protocols, ESP-Now and UDP.",
                             }
                         ]

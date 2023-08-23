@@ -114,7 +114,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                             } 
                                         </div>
 
-                                        <FadeInOnScrollDefault elementName='ProjectCarousel' visibilityThreshold={0.3}>
+                                        <FadeInOnScrollDefault elementName='ProjectCarousel' visibilityThreshold={0.3} exitThreshold={0.3} isTitle={false}>
                                         <div className='detail-carousel-container'>
                                             {
                                                 project.carousel.map((carousel, index) => {
@@ -130,7 +130,11 @@ export default function Page({ params } : { params: { project: string }}) {
                                         </FadeInOnScrollDefault>
                                         
                                         <div className="detail-obstacles-container detail-text">
-                                            <h3 className="detail-how-sub-header">Challenges</h3>
+                                        
+                                        <FadeInOnScrollDefault elementName='Challenges' visibilityThreshold={0.25} exitThreshold={0.25} isTitle={true}>
+                                            {/* className moved to FadeInOnScrollDefault File */}
+                                            <h3>Challenges</h3>
+                                        </FadeInOnScrollDefault>
                                             {
                                                 project.how.map((how, index) => {
                                                     if (how.section === 'obstacles')
