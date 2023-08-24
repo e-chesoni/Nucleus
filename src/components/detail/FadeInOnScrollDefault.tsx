@@ -6,9 +6,10 @@ interface Props {
   visibilityThreshold: number;
   exitThreshold: number; // lower than visibility threshold to stay longer
   titleRank: number;
+  visibleOnLoad: boolean;
 }
 
-const FadeInOnScrollDefault: React.FC<Props> = ({ elementName, visibilityThreshold, exitThreshold, children, titleRank }) => {
+const FadeInOnScrollDefault: React.FC<Props> = ({ visibleOnLoad, elementName, visibilityThreshold, exitThreshold, children, titleRank }) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef<HTMLDivElement | null>(null);
   const timeoutRef = useRef<number | undefined>(undefined); // Define timeoutRef
@@ -57,7 +58,14 @@ const FadeInOnScrollDefault: React.FC<Props> = ({ elementName, visibilityThresho
     }
   }, [isVisible, elementName]);
 
-  if (titleRank == 2) {
+  if (titleRank == 1) {
+    // detail-header-text
+    return (
+      <div ref={elementRef} className={`fade-in-on-scroll detail-header-text ${isVisible ? 'visible' : 'detail-header-text'}`}>
+        {children}
+      </div>
+    );
+  } else if (titleRank == 2) {
     return (
       <div ref={elementRef} className={`fade-in-on-scroll detail-header-text detail-how-title ${isVisible ? 'visible' : 'detail-header-text detail-how-title'}`}>
         {children}
@@ -82,10 +90,6 @@ const FadeInOnScrollDefault: React.FC<Props> = ({ elementName, visibilityThresho
       </div>
     );
   }
-
-  
-
-
 };
 
 export default FadeInOnScrollDefault;

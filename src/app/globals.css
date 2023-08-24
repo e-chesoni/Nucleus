@@ -454,6 +454,12 @@ nav.sticky-nav {
   height: 100vh;
 }
 
+.detail-tldr-container {
+  padding: 0px 30px 30px 35px;
+  color: #DDDFE1;
+  font-size: medium;
+}
+
 .detail-header, .detail-sticky-header {
   padding: 0px 30px 0px 35px;
 }

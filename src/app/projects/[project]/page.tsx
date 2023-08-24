@@ -84,10 +84,12 @@ export default function Page({ params } : { params: { project: string }}) {
                                         }
                                         
                                         <div className="detail-title-container detail-header">
-                                            <h1 className='detail-header-text'>{project.title}</h1>
+                                            <FadeInOnScroll visibleOnLoad={true} targetHeight={100} fadeOutHeight={100}>
+                                                <h1 className=''>{project.title}</h1>
+                                            </FadeInOnScroll>
                                             <div className="detail-title-divider"></div>
                                         </div>
-                                        <div className="detail-tldr-container detail-text">
+                                        <div className="detail-tldr-container">
                                             {/* TLDR */}
                                             <p>{project.what}</p>
                                         </div>
@@ -96,10 +98,10 @@ export default function Page({ params } : { params: { project: string }}) {
                                     <div className="detail-how-container">
                                         {/* How */}
                                         <div className='detail-sticky-header detail-how-intro'>
-                                        <FadeInOnScrollDefault elementName='Challenges' visibilityThreshold={0.01} exitThreshold={0.01} titleRank={2}>
-                                            {/* className moved to FadeInOnScrollDefault File */}
-                                            <h2>How?</h2>
-                                        </FadeInOnScrollDefault>
+                                            <FadeInOnScrollDefault visibleOnLoad={false} elementName='Challenges' visibilityThreshold={0.01} exitThreshold={0.01} titleRank={2}>
+                                                {/* className moved to FadeInOnScrollDefault File */}
+                                                <h2>How?</h2>
+                                            </FadeInOnScrollDefault>
                                             {
                                                 project.how.map((how, index) => {
                                                     if (how.section === 'obstacles')
@@ -107,7 +109,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                                         return (
                                                             <StickyHeader
                                                                 key={index}
-                                                                {...how}
+                                                                summary={how.summary}
                                                             />
                                                         )
                                                     } 
@@ -115,27 +117,27 @@ export default function Page({ params } : { params: { project: string }}) {
                                             } 
                                         </div>
 
-                                        <FadeInOnScrollDefault elementName='ProjectCarousel' visibilityThreshold={0.005} exitThreshold={0.005} titleRank={0}>
-                                        <div className='detail-carousel-container'>
-                                            <div className='detail-sticky-carousel'>
-                                            {
-                                                project.carousel.map((carousel, index) => {
-                                                    return (
-                                                        <ProjectCarousel
-                                                            key={index}
-                                                            {...carousel}
-                                                        />
-                                                    )
-                                                })
-                                            }
+                                        <FadeInOnScrollDefault visibleOnLoad={false} elementName='ProjectCarousel' visibilityThreshold={0.005} exitThreshold={0.005} titleRank={0}>
+                                            <div className='detail-carousel-container'>
+                                                <div className='detail-sticky-carousel'>
+                                                {
+                                                    project.carousel.map((carousel, index) => {
+                                                        return (
+                                                            <ProjectCarousel
+                                                                key={index}
+                                                                imgs={carousel.imgs}
+                                                            />
+                                                        )
+                                                    })
+                                                }
+                                                </div>
+
                                             </div>
-                                            
-                                        </div>
                                         </FadeInOnScrollDefault>
                                         
                                         <div className="detail-obstacles-container detail-text">
                                         
-                                        <FadeInOnScrollDefault elementName='Challenges' visibilityThreshold={0.2} exitThreshold={0.2} titleRank={3}>
+                                        <FadeInOnScrollDefault visibleOnLoad={false} elementName='Challenges' visibilityThreshold={0.2} exitThreshold={0.2} titleRank={3}>
                                             {/* className moved to FadeInOnScrollDefault File */}
                                             <h3>Challenges</h3>
                                         </FadeInOnScrollDefault>
@@ -146,7 +148,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                                         return (
                                                             <How
                                                                 key={index}
-                                                                {...how}
+                                                                obstacles={how.obstacles}
                                                             />
                                                         )
                                                     } 
@@ -156,10 +158,10 @@ export default function Page({ params } : { params: { project: string }}) {
                                         
                                         <div className="detail-build-container detail-text">
                                             {/* Build */}
-                                            <FadeInOnScrollDefault elementName='Challenges' visibilityThreshold={0.2} exitThreshold={0.2} titleRank={3}>
-                                            {/* className moved to FadeInOnScrollDefault File */}
-                                            <h3 className='detail-h3'>Build</h3>
-                                        </FadeInOnScrollDefault>
+                                            <FadeInOnScrollDefault visibleOnLoad={false} elementName='Challenges' visibilityThreshold={0.2} exitThreshold={0.2} titleRank={3}>
+                                                {/* className moved to FadeInOnScrollDefault File */}
+                                                <h3 className='detail-h3'>Build</h3>
+                                            </FadeInOnScrollDefault>
                                             <div className="detail-build-mechanical-container">
                                                 {/* Mechanical */}
                                                 {
@@ -170,7 +172,9 @@ export default function Page({ params } : { params: { project: string }}) {
                                                                 <div>
                                                                     <BuildElement
                                                                         key={index}
-                                                                        {...how}
+                                                                        section={how.section}
+                                                                        modules={how.modules}
+                                                                        paragraphs={how.paragraphs}
                                                                     />
                                                                 </div>
                                                             )
@@ -188,7 +192,9 @@ export default function Page({ params } : { params: { project: string }}) {
                                                                 <div>
                                                                     <BuildElement
                                                                         key={index}
-                                                                        {...how}
+                                                                        section={how.section}
+                                                                        modules={how.modules}
+                                                                        paragraphs={how.paragraphs}
                                                                     />
                                                                 </div>
                                                             )
@@ -206,7 +212,9 @@ export default function Page({ params } : { params: { project: string }}) {
                                                                 <div>
                                                                     <BuildElement
                                                                         key={index}
-                                                                        {...how}
+                                                                        section={how.section}
+                                                                        modules={how.modules}
+                                                                        paragraphs={how.paragraphs}
                                                                     />
                                                                 </div>
                                                             )
@@ -227,7 +235,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                                                 <div>
                                                                     <Conclusion
                                                                         key={index}
-                                                                        {...how}
+                                                                        paragraphs={how.paragraphs}
                                                                     />
                                                                 </div>
                                                             )
@@ -238,9 +246,9 @@ export default function Page({ params } : { params: { project: string }}) {
                                     
                                     {/* TODO: DetailFooter */}
                                     <DetailFooter
-                                            key={index}
-                                            {...project}
-                                        />
+                                        key={index}
+                                        {...project}
+                                    />
                                 </main>
                                 
                             </div>

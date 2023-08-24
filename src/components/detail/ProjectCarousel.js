@@ -2,7 +2,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image'
 
-export const ProjectCarousel = ({ imgs, desc }) => {
+export const ProjectCarousel = ({ imgs }) => {
     return (
         <Carousel className="h-50">
             {

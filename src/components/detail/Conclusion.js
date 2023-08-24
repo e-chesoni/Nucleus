@@ -2,7 +2,7 @@
 import { Container, Col, Row } from "react-bootstrap";
 import { ConclusionParagraph } from "./ConclusionParagraph";
 
-export const Conclusion = ({ section, modules, paragraphs }) => {
+export const Conclusion = ({ paragraphs }) => {
     return (
         <Col className="build-element-col">
             <Row>

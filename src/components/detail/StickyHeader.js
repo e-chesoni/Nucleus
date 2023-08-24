@@ -5,7 +5,7 @@ import FadeInOnScrollDefault from "./FadeInOnScrollDefault";
 
 export const StickyHeader = ({ summary }) => {
     return (
-        <FadeInOnScrollDefault elementName="Paragraph" visibilityThreshold={0.1} exitThreshold={0.1}>
+        <FadeInOnScrollDefault visibleOnLoad={false} elementName="Paragraph" visibilityThreshold={0.1} exitThreshold={0.1}>
             <Row>
                 <p>{summary}</p>
             </Row>

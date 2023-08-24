@@ -7,7 +7,7 @@ export const ConclusionParagraph = ({ order, text }) => {
     if (order < 4) {
         return (
             <Col className="paragraph-col">
-                <FadeInOnScrollDefault elementName="ConclusionParagraph" visibilityThreshold={0.01} exitThreshold={0.01}>
+                <FadeInOnScrollDefault visibleOnLoad={false} elementName="ConclusionParagraph" visibilityThreshold={0.01} exitThreshold={0.01}>
                 <div className="conclusion-container">
                     <div className="sticky-c">{text}</div>
                 </div>

@@ -11,7 +11,7 @@ export const BuildElement = ({ section, modules, paragraphs }) => {
             </FadeInOnScrollDefault>
             <Row>
                 <div>
-                    <FadeInOnScrollDefault elementName="Paragraph" visibilityThreshold={0.1} exitThreshold={0.1}>
+                    <FadeInOnScrollDefault visibleOnLoad={false} elementName="Paragraph" visibilityThreshold={0.1} exitThreshold={0.1}>
                     <div className="mod-container">
                         <div className="sticky-mod">
                             <h5>Modules:</h5>

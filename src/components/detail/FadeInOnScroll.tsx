@@ -4,10 +4,11 @@ interface Props {
   targetHeight: number;
   fadeOutHeight: number;
   children: React.ReactNode;
+  visibleOnLoad: boolean;
 }
 
-const FadeInOnScroll: React.FC<Props> = ({ targetHeight, fadeOutHeight, children }) => {
-  const [isVisible, setIsVisible] = useState(false);
+const FadeInOnScroll: React.FC<Props> = ({ visibleOnLoad, targetHeight, fadeOutHeight, children }) => {
+  const [isVisible, setIsVisible] = useState(visibleOnLoad);
   const elementRef = useRef<HTMLDivElement | null>(null);
 
   const handleScroll = () => {
