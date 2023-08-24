@@ -451,7 +451,7 @@ nav.sticky-nav {
 }
 
 .detail-intro-container {
-  height: 100vh;
+  height: 130vh;
 }
 
 .detail-tldr-container {
@@ -470,6 +470,10 @@ nav.sticky-nav {
 
 .detail-carousel-container {
   height: 100vh;
+}
+
+.detail-canvas {
+ height: 30vh;
 }
 
 .carousel-item {

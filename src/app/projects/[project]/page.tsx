@@ -46,12 +46,14 @@ export default function Page({ params } : { params: { project: string }}) {
                                 <main className='bg-detail'>
                                     <DetailNavBar/>
                                     <div className='detail-intro-container'>
+                                    <FadeInOnScrollDefault visibleOnLoad={true} elementName='Canvas' visibilityThreshold={0.2} exitThreshold={0.2} titleRank={5}>
+                                        <div className='detail-canvas'>
                                         {
                                             project.how.map((how, index) => {
                                                 if (index === 0 && project.title === 'magikarp')
                                                 {
                                                     return (
-                                                        <Canvas className='canvas'>
+                                                        <Canvas>
                                                             <OrbitControls enableZoom={false} />
                                                             <ambientLight intensity={0.7}/>
                                                             <pointLight color={'#FFA500'} position={[0, -5, 3]} intensity={500} distance={0}/>
@@ -65,7 +67,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                                 } else if (index === 0 && project.title === 'Bem-0')
                                                 {
                                                     return (
-                                                        <Canvas className='canvas'>
+                                                        <Canvas>
                                                             <OrbitControls enableZoom={false} />
                                                             <ambientLight intensity={0.7}/>
                                                             <pointLight color={'#FFA500'} position={[-2, 5, 2]} intensity={1000} distance={0}/>
@@ -82,16 +84,19 @@ export default function Page({ params } : { params: { project: string }}) {
                                                 }
                                             })
                                         }
-                                        
+                                        </div>
+                                        </FadeInOnScrollDefault>
                                         <div className="detail-title-container detail-header">
-                                            <FadeInOnScroll visibleOnLoad={true} targetHeight={100} fadeOutHeight={100}>
+                                            <FadeInOnScrollDefault visibleOnLoad={true} elementName='Project Title' visibilityThreshold={0.2} exitThreshold={0.2} titleRank={1}>
                                                 <h1 className=''>{project.title}</h1>
-                                            </FadeInOnScroll>
+                                            </FadeInOnScrollDefault>
                                             <div className="detail-title-divider"></div>
                                         </div>
                                         <div className="detail-tldr-container">
                                             {/* TLDR */}
-                                            <p>{project.what}</p>
+                                            <FadeInOnScrollDefault visibleOnLoad={true} elementName="Paragraph" visibilityThreshold={0.01} exitThreshold={0.01} titleRank={0}>
+                                                <p>{project.what}</p>
+                                            </FadeInOnScrollDefault>
                                         </div>
                                         
                                     </div>
@@ -117,7 +122,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                             } 
                                         </div>
 
-                                        <FadeInOnScrollDefault visibleOnLoad={false} elementName='ProjectCarousel' visibilityThreshold={0.005} exitThreshold={0.005} titleRank={0}>
+                                        <FadeInOnScrollDefault visibleOnLoad={false} elementName='ProjectCarousel' visibilityThreshold={0.3} exitThreshold={0.3} titleRank={0}>
                                             <div className='detail-carousel-container'>
                                                 <div className='detail-sticky-carousel'>
                                                 {
