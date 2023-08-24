@@ -74,7 +74,7 @@ const FadeInOnScrollDefault: React.FC<Props> = ({ children, elementName, fadeInT
     );
   } else if (titleRank == 2) {
     return (
-      <div ref={elementRef} className={`fade-in-on-scroll detail-header-text detail-how-title ${isVisible ? 'visible' : 'detail-header-text detail-how-title'}`}>
+      <div ref={elementRef} className={`fade-in-on-scroll detail-header-text ${isVisible ? 'visible' : 'detail-header-text'}`}>
         {children}
       </div>
     );
@@ -96,6 +96,12 @@ const FadeInOnScrollDefault: React.FC<Props> = ({ children, elementName, fadeInT
         {children}
       </div>
     );
+  } else if (titleRank == 6) {
+      return (
+        <div ref={elementRef} className={`fade-in-on-scroll conclusion-header ${isVisible ? 'visible' : 'conclusion-header'}`}>
+          {children}
+        </div>
+      );
   } else {
     return (
       <div ref={elementRef} className={`fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>

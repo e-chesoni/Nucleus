@@ -7,20 +7,21 @@ export const ConclusionParagraph = ({ order, text }) => {
     if (order < 4) {
         return (
             <Col className="paragraph-col">
-                <FadeInOnScrollDefault elementName="ConclusionParagraph" fadeInThreshold={1} setFadeIn={false} titleRank={0} visibleOnLoad={false} visibilityThreshold={0.01}>
+                <FadeInOnScrollDefault elementName="ConclusionParagraph" fadeInThreshold={0.3} setFadeIn={true} titleRank={0} visibleOnLoad={false} visibilityThreshold={0.01}>
                 <div className="conclusion-container">
                     <div className="sticky-c">{text}</div>
                 </div>
                 </FadeInOnScrollDefault>
-
             </Col>
         )
     } else {
         return (
             <Col className="paragraph-col">
+                <FadeInOnScrollDefault elementName="ConclusionParagraph" fadeInThreshold={0.2} setFadeIn={true} titleRank={0} visibleOnLoad={false} visibilityThreshold={0.01}>
                 <div className="last-conclusion-container">
                     <div className="sticky-c">{text}</div>
                 </div>
+                </FadeInOnScrollDefault>
             </Col>
         )
     }

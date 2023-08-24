@@ -525,9 +525,9 @@ nav.sticky-nav {
 }
 
 .conclusion-header {
-  padding: 30px 30px 30px 0px;
+  padding: 0px 30px 30px 0px;
   position: sticky;
-  top: 0vh;
+  top: 6vh;
 }
 
 .detail-foot-divider {
@@ -575,6 +575,8 @@ nav.sticky-nav {
 .conclusion-container {
   height: 110vh;
 }
+
+
 
 .last-conclusion-container {
   height: 80vh;

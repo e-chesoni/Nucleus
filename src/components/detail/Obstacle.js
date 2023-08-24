@@ -9,7 +9,7 @@ export const Obstacle = ({ paragraphs }) => {
             {
                 paragraphs.map((paragraph, index) => {
                     return (
-                        <FadeInOnScrollDefault elementName="Obstacle" fadeInThreshold={1} setFadeIn={false} titleRank={0} visibleOnLoad={false} visibilityThreshold={0.1}>
+                        <FadeInOnScrollDefault elementName="Obstacle" fadeInThreshold={0.70} setFadeIn={true} titleRank={0} visibleOnLoad={false} visibilityThreshold={0.1}>
                             <div className="desc-container">
                                 <div className="sticky-p">{paragraph.text}</div>
                             </div>

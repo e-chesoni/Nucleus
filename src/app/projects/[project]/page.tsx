@@ -89,8 +89,8 @@ export default function Page({ params } : { params: { project: string }}) {
                                         <div className="detail-title-container detail-header">
                                             <FadeInOnScrollDefault elementName='Project Title' fadeInThreshold={1} setFadeIn={false} visibleOnLoad={true} visibilityThreshold={0.2} titleRank={1}>
                                                 <h1 className=''>{project.title}</h1>
+                                                <div className="detail-title-divider"></div>
                                             </FadeInOnScrollDefault>
-                                            <div className="detail-title-divider"></div>
                                         </div>
                                         <div className="detail-tldr-container">
                                             {/* TLDR */}
@@ -103,7 +103,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                     <div className="detail-how-container">
                                         {/* How */}
                                         <div className='detail-sticky-header detail-how-intro'>
-                                            <FadeInOnScrollDefault  elementName='How Title' fadeInThreshold={0.35} setFadeIn={true} visibleOnLoad={false} visibilityThreshold={0.01} titleRank={2}>
+                                            <FadeInOnScrollDefault elementName='How Title' fadeInThreshold={0.35} setFadeIn={true} visibleOnLoad={false} visibilityThreshold={0.01} titleRank={2}>
                                                 {/* className moved to FadeInOnScrollDefault File */}
                                                 <h2>How?</h2>
                                             </FadeInOnScrollDefault>
@@ -142,7 +142,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                         
                                         <div className="detail-obstacles-container detail-text">
                                         
-                                        <FadeInOnScrollDefault elementName='Challenges' fadeInThreshold={1} setFadeIn={false} visibleOnLoad={false} visibilityThreshold={0.2} titleRank={3}>
+                                        <FadeInOnScrollDefault elementName='Challenges' fadeInThreshold={0.60} setFadeIn={true} visibleOnLoad={false} visibilityThreshold={0.2} titleRank={3}>
                                             {/* className moved to FadeInOnScrollDefault File */}
                                             <h3>Challenges</h3>
                                         </FadeInOnScrollDefault>
@@ -163,7 +163,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                         
                                         <div className="detail-build-container detail-text">
                                             {/* Build */}
-                                            <FadeInOnScrollDefault elementName='Challenges' fadeInThreshold={1} setFadeIn={false} visibleOnLoad={false} visibilityThreshold={0.2} titleRank={3}>
+                                            <FadeInOnScrollDefault elementName='Challenges' fadeInThreshold={0.6} setFadeIn={true} visibleOnLoad={false} visibilityThreshold={0.2} titleRank={3}>
                                                 {/* className moved to FadeInOnScrollDefault File */}
                                                 <h3 className='detail-h3'>Build</h3>
                                             </FadeInOnScrollDefault>
@@ -230,8 +230,13 @@ export default function Page({ params } : { params: { project: string }}) {
                                         </div>
                                     </div>
                                     <div className="detail-conclusion detail-text">
-                                        {/* Conclusion */}
-                                        <h2 className='conclusion-header'>Conclusion</h2>
+                                        <div className='conclusion-header'>
+                                        <FadeInOnScrollDefault elementName='Conclusion Title' fadeInThreshold={0.35} setFadeIn={true} visibleOnLoad={false} visibilityThreshold={0.01} titleRank={6}>
+                                            {/* Conclusion */}
+                                            <h2>Conclusion</h2>
+                                        </FadeInOnScrollDefault>
+                                        </div>
+                                        
                                         {
                                                     project.how.map((how, index) => {
                                                         if (how.section === 'conclusion')
