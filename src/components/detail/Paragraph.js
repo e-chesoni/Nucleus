@@ -7,7 +7,7 @@ export const Paragraph = ({ order, text }) => {
     console.log(order);
     return (
             <Col className="paragraph-col">
-                <FadeInOnScrollDefault visibleOnLoad={false} elementName="Paragraph" visibilityThreshold={0.1} exitThreshold={0.1}>
+                <FadeInOnScrollDefault elementName="Paragraph" fadeInThreshold={1} setFadeIn={false} titleRank={0} visibleOnLoad={false} visibilityThreshold={0.1}>
                     <div className="desc-container">
                         <div className="sticky-p">{text}</div>
                     </div>

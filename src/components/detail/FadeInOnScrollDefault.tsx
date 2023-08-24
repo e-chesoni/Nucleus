@@ -3,13 +3,14 @@ import React, { useState, useEffect, useRef } from 'react';
 interface Props {
   children: React.ReactNode;
   elementName: string; // New prop for the element's identifier
-  visibilityThreshold: number;
-  exitThreshold: number; // lower than visibility threshold to stay longer
+  fadeInThreshold: number;
+  setFadeIn: boolean;
   titleRank: number;
   visibleOnLoad: boolean;
+  visibilityThreshold: number;
 }
 
-const FadeInOnScrollDefault: React.FC<Props> = ({ visibleOnLoad, elementName, visibilityThreshold, exitThreshold, children, titleRank }) => {
+const FadeInOnScrollDefault: React.FC<Props> = ({ children, elementName, fadeInThreshold, setFadeIn, titleRank, visibleOnLoad, visibilityThreshold }) => {
   const [isVisible, setIsVisible] = useState(visibleOnLoad);
   const elementRef = useRef<HTMLDivElement | null>(null);
   const timeoutRef = useRef<number | undefined>(undefined); // Define timeoutRef
@@ -42,6 +43,12 @@ const FadeInOnScrollDefault: React.FC<Props> = ({ visibleOnLoad, elementName, vi
         clearTimeout(timeoutRef.current); // Clear the timeout if element is not visible
       }
 
+      if (setFadeIn) {
+        if ((elementTop > (screenHeight * fadeInThreshold))) {
+          setIsVisible(false);
+          clearTimeout(timeoutRef.current);
+        }
+      }
     }
   };
 

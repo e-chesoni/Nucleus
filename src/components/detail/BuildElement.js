@@ -6,12 +6,12 @@ import FadeInOnScrollDefault from '@/components/detail/FadeInOnScrollDefault';
 export const BuildElement = ({ section, modules, paragraphs }) => {
     return (
         <Col className="build-element-col">
-            <FadeInOnScrollDefault elementName='ObstacleTitle' visibilityThreshold={0.27} exitThreshold={0.27} titleRank={4}>
+            <FadeInOnScrollDefault elementName='ObstacleTitle' fadeInThreshold={1} setFadeIn={false} visibleOnLoad={false} visibilityThreshold={0.27} titleRank={4}>
                 <h4>{section}</h4>
             </FadeInOnScrollDefault>
             <Row>
                 <div>
-                    <FadeInOnScrollDefault visibleOnLoad={false} elementName="Paragraph" visibilityThreshold={0.1} exitThreshold={0.1}>
+                    <FadeInOnScrollDefault elementName="Paragraph" fadeInThreshold={1} setFadeIn={false} titleRank={0} visibleOnLoad={false} visibilityThreshold={0.1}>
                     <div className="mod-container">
                         <div className="sticky-mod">
                             <h5>Modules:</h5>

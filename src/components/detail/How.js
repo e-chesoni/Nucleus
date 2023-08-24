@@ -10,7 +10,7 @@ export const How = ({ obstacles }) => {
                 obstacles.map((obstacle, index) => {
                     return (
                         <div>
-                            <FadeInOnScrollDefault visibleOnLoad={false} elementName='ObstacleTitle' visibilityThreshold={0.27} exitThreshold={0.27} titleRank={4}>
+                            <FadeInOnScrollDefault elementName='ObstacleTitle' fadeInThreshold={1} setFadeIn={false} titleRank={4} visibleOnLoad={false} visibilityThreshold={0.27}>
                                 {/* className moved to FadeInOnScrollDefault File */}
                                 <h4>{obstacle.title}</h4>
                             </FadeInOnScrollDefault>
