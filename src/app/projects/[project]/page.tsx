@@ -96,7 +96,10 @@ export default function Page({ params } : { params: { project: string }}) {
                                     <div className="detail-how-container">
                                         {/* How */}
                                         <div className='detail-sticky-header detail-how-intro'>
-                                            <h2 className="detail-header-text detail-how-title">How?</h2>
+                                        <FadeInOnScrollDefault elementName='Challenges' visibilityThreshold={0.01} exitThreshold={0.01} titleRank={2}>
+                                            {/* className moved to FadeInOnScrollDefault File */}
+                                            <h2>How?</h2>
+                                        </FadeInOnScrollDefault>
                                             {
                                                 project.how.map((how, index) => {
                                                     if (how.section === 'obstacles')

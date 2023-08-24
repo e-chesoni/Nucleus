@@ -1,4 +1,3 @@
-import { title } from 'process';
 import React, { useState, useEffect, useRef } from 'react';
 
 interface Props {
@@ -58,22 +57,25 @@ const FadeInOnScrollDefault: React.FC<Props> = ({ elementName, visibilityThresho
     }
   }, [isVisible, elementName]);
 
-  if (titleRank == 3) {
+  if (titleRank == 2) {
+    return (
+      <div ref={elementRef} className={`fade-in-on-scroll detail-header-text detail-how-title ${isVisible ? 'visible' : 'detail-header-text detail-how-title'}`}>
+        {children}
+      </div>
+    );
+  } else if (titleRank == 3) {
     return (
       <div ref={elementRef} className={`fade-in-on-scroll detail-how-sub-header ${isVisible ? 'visible' : 'detail-how-sub-header'}`}>
         {children}
       </div>
     );
-
   } else if (titleRank == 4) {
     return (
       <div ref={elementRef} className={`fade-in-on-scroll detail-how-sub-section-header ${isVisible ? 'visible' : 'detail-how-sub-section-header'}`}>
         {children}
       </div>
     );
-  }
-  
-  else {
+  } else {
     return (
       <div ref={elementRef} className={`fade-in-on-scroll ${isVisible ? 'visible' : ''}`}>
         {children}

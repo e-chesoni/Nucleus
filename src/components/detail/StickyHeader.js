@@ -1,11 +1,14 @@
 "use client";
-import { Container, Col, Row } from "react-bootstrap";
-import { Obstacle } from "./Obstacle";
+
+import { Row } from "react-bootstrap";
+import FadeInOnScrollDefault from "./FadeInOnScrollDefault";
 
 export const StickyHeader = ({ summary }) => {
     return (
-        <Row className="">
-            <p>{summary}</p>
-        </Row>
+        <FadeInOnScrollDefault elementName="Paragraph" visibilityThreshold={0.1} exitThreshold={0.1}>
+            <Row>
+                <p>{summary}</p>
+            </Row>
+        </FadeInOnScrollDefault>
     )
 }
