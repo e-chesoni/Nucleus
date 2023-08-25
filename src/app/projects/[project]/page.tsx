@@ -2,18 +2,11 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
-import Image from 'next/image';
 
-import React, { useState, useEffect, useRef, Suspense } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+import React, { Suspense } from 'react';
 
 import { Canvas } from "@react-three/fiber";
-import Box from "../../../components/detail/Box";
-import Sphere from "../../../components/detail/AnimatedSphere";
-import Iphone from "../../../components/detail/Iphone";
-import Magikarp from "../../../components/detail/Magikarp";
 import MagikarpLight from "../../../components/detail/MagikarpLight";
-import BEM01 from "../../../components/detail/BEM-01";
 import BEM01Light from "../../../components/detail/BEM-01Light";
 import { extend } from '@react-three/fiber'
 import { OrbitControls, PerspectiveCamera, TransformControls, useGLTF } from '@react-three/drei';
@@ -28,9 +21,6 @@ import { BuildElement } from '../../../components/detail/BuildElement';
 import { Conclusion } from "../../../components/detail/Conclusion";
 import { ProjectCarousel } from "../../../components/detail/ProjectCarousel";
 
-import ReactDOM from 'react-dom';
-import { Fade } from 'react-bootstrap';
-import FadeInOnScroll from '@/components/detail/FadeInOnScroll';
 import FadeInOnScrollDefault from '@/components/detail/FadeInOnScrollDefault';
 
 export default function Page({ params } : { params: { project: string }}) {
@@ -142,7 +132,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                         
                                         <div className="detail-obstacles-container detail-text">
                                         
-                                        <FadeInOnScrollDefault elementName='Challenges' fadeInThreshold={0.60} setFadeIn={true} visibleOnLoad={false} visibilityThreshold={0.2} titleRank={3}>
+                                        <FadeInOnScrollDefault elementName='Challenges' fadeInThreshold={0.4} setFadeIn={true} visibleOnLoad={false} visibilityThreshold={0.2} titleRank={3}>
                                             {/* className moved to FadeInOnScrollDefault File */}
                                             <h3>Challenges</h3>
                                         </FadeInOnScrollDefault>
@@ -163,7 +153,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                         
                                         <div className="detail-build-container detail-text">
                                             {/* Build */}
-                                            <FadeInOnScrollDefault elementName='Challenges' fadeInThreshold={0.6} setFadeIn={true} visibleOnLoad={false} visibilityThreshold={0.2} titleRank={3}>
+                                            <FadeInOnScrollDefault elementName='Challenges' fadeInThreshold={0.5} setFadeIn={true} visibleOnLoad={false} visibilityThreshold={0.2} titleRank={3}>
                                                 {/* className moved to FadeInOnScrollDefault File */}
                                                 <h3 className='detail-h3'>Build</h3>
                                             </FadeInOnScrollDefault>
@@ -231,7 +221,7 @@ export default function Page({ params } : { params: { project: string }}) {
                                     </div>
                                     <div className="detail-conclusion detail-text">
                                         <div className='conclusion-header'>
-                                        <FadeInOnScrollDefault elementName='Conclusion Title' fadeInThreshold={0.35} setFadeIn={true} visibleOnLoad={false} visibilityThreshold={0.01} titleRank={6}>
+                                        <FadeInOnScrollDefault elementName='Conclusion Title' fadeInThreshold={0.25} setFadeIn={true} visibleOnLoad={false} visibilityThreshold={0.01} titleRank={6}>
                                             {/* Conclusion */}
                                             <h2>Conclusion</h2>
                                         </FadeInOnScrollDefault>
