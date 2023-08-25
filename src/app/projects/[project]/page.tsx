@@ -9,13 +9,13 @@ import { Canvas } from "@react-three/fiber";
 import MagikarpLight from "../../../components/detail/MagikarpLight";
 import BEM01Light from "../../../components/detail/BEM-01Light";
 import { extend } from '@react-three/fiber'
-import { OrbitControls, PerspectiveCamera, TransformControls, useGLTF } from '@react-three/drei';
+import { OrbitControls, TransformControls } from '@react-three/drei';
 extend({ OrbitControls, TransformControls })
 
 import { DetailNavBar } from '../../../components/detail/DetailNavBar';
 import { DetailFooter } from '../../../components/detail/DetailFooter';
 import { projects } from "../../projects";
-import { StickyHeader } from '../../../components/detail/StickyHeader';
+import { Paragraph } from '@/components/detail/Paragraph';
 import { How } from '../../../components/detail/How';
 import { BuildElement } from '../../../components/detail/BuildElement';
 import { Conclusion } from "../../../components/detail/Conclusion";
@@ -102,9 +102,12 @@ export default function Page({ params } : { params: { project: string }}) {
                                                     if (how.section === 'obstacles')
                                                     {
                                                         return (
-                                                            <StickyHeader
+                                                            <Paragraph
                                                                 key={index}
-                                                                summary={how.summary}
+                                                                order={0}
+                                                                text={how.summary}
+                                                                isHowDesc={true}
+                                                                isConclusion={false}
                                                             />
                                                         )
                                                     } 

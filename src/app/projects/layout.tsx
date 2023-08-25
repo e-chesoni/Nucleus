@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { Footer } from "../../components/Footer";
 
 const Layout = ({ children }) => (

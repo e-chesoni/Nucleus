@@ -1,10 +1,10 @@
 "use client";
 
-import { Container, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import FadeInOnScrollDefault from "./FadeInOnScrollDefault";
 
-export const Paragraph = ({ order, text, isConclusion }) => {
-    if (!isConclusion)
+export const Paragraph = ({ order, text, isHowDesc, isConclusion }) => {
+    if (!isConclusion && !isHowDesc)
     {
         return (
             <Col className="paragraph-col">
@@ -14,6 +14,14 @@ export const Paragraph = ({ order, text, isConclusion }) => {
                     </div>
                 </FadeInOnScrollDefault>
             </Col>
+        )
+    } else if (isHowDesc) {
+        return (
+            <FadeInOnScrollDefault elementName="HowDesc" fadeInThreshold={0.40} setFadeIn={true} titleRank={0} visibleOnLoad={false} visibilityThreshold={0.0}>
+                <Row>
+                    <p>{text}</p>
+                </Row>
+            </FadeInOnScrollDefault>
         )
     } else {
         if (order < 4) {
