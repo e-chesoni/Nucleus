@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import FadeInOnScrollDefault from '@/components/detail/FadeInOnScrollDefault';
 
 export const Hero = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -50,23 +49,22 @@ export const Hero = () => {
     return (
         <section className='hero' id='home'>
             <Container>
+                
                 <Row>
                     <Col xs={12} md={6} xl={7}>
-                        <TrackVisibility>
-                            {({ isVisible }) =>
-                                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <div className='home-container'>
-                                        <div className='intro'>
-                                          <h2><span className="sentence-start">Hi</span><span>, my name is <span className="name">Elaine Chesoni</span></span></h2>
-                                          <div>
-                                            <h2><span className="sentence-start">I</span> <span className="design-text">design</span> and <span className="develop-text">develop</span><span className="txt-rotate" period="1000" data-rotate='[ "Embedded Systems", "Control Systems", "Printed Circuit Boards" ]'> <span className="wrap changing-text">{text}</span> </span></h2>
-                                          </div>
-                                        </div>
-                                        <div className="timeline-text"><p>Let me show you...</p></div>
+                        <div>
+                            <FadeInOnScrollDefault elementName='Project Title' fadeInThreshold={1} setFadeIn={false} visibleOnLoad={true} visibilityThreshold={0.1} titleRank={1}>
+                                <div className='home-container'>
+                                    <div className='intro'>
+                                      <h2><span className="sentence-start">Hi</span><span>, my name is <span className="name">Elaine Chesoni</span></span></h2>
+                                      <div>
+                                        <h2><span className="sentence-start">I</span> <span className="design-text">design</span> and <span className="develop-text">develop</span><span className="txt-rotate" period="1000" data-rotate='[ "Embedded Systems", "Control Systems", "Printed Circuit Boards" ]'> <span className="wrap changing-text">{text}</span> </span></h2>
+                                      </div>
                                     </div>
+                                    <div className="timeline-text"><p>Let me show you...</p></div>
                                 </div>
-                            }
-                        </TrackVisibility>
+                            </FadeInOnScrollDefault>
+                        </div>
                     </Col>
                 </Row>
             </Container>
