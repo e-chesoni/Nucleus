@@ -1,5 +1,5 @@
 "use client";
-import { Container, Col, Row } from "react-bootstrap";
+import { Col, } from "react-bootstrap";
 import FadeInOnScrollDefault from "./FadeInOnScrollDefault";
 
 export const ConclusionParagraph = ({ order, text }) => {

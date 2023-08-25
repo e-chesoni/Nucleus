@@ -1,7 +1,7 @@
 "use client";
-import { Container, Col, Row } from "react-bootstrap";
-import { Obstacle } from "./Obstacle";
+import { Row } from "react-bootstrap";
 import FadeInOnScrollDefault from '@/components/detail/FadeInOnScrollDefault';
+import { Paragraph } from "./Paragraph";
 
 export const How = ({ obstacles }) => {
     return (
@@ -14,10 +14,17 @@ export const How = ({ obstacles }) => {
                                 {/* className moved to FadeInOnScrollDefault File */}
                                 <h4>{obstacle.title}</h4>
                             </FadeInOnScrollDefault>
-                            <Obstacle
-                                key={index}
-                                {...obstacle}
-                            />
+                            {
+                            obstacle.paragraphs.map((paragraph, index) => {
+                                return (
+                                    <Paragraph
+                                        key={index}
+                                        order={paragraph.order}
+                                        text={paragraph.text}
+                                    />
+                                    )
+                                })
+                            }
                         </div>
                     )
                 })
