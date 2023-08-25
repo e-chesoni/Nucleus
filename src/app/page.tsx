@@ -8,6 +8,7 @@ import { Projects } from '@/components/Projects';
 import { About } from '@/components/About';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
+import FadeInOnScrollDefault from '@/components/detail/FadeInOnScrollDefault';
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
               <div className="mt-4 timeline-middle"></div>
               <div className="timeline-component timeline-content">
                 <div className="timeline-text-container"><p>&lt;Begin/&gt;</p></div>
-                <Hero/>
+                  <Hero/>
               </div>
             </div>
           </section>

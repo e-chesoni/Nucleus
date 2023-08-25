@@ -3,7 +3,7 @@
 import { Container, Row, Col, Tab, Nav, Carousel } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import FadeInOnScrollDefault from '@/components/detail/FadeInOnScrollDefault';
 
 import { projects } from "../app/projects.js";
 
@@ -14,9 +14,8 @@ export const Projects = () => {
             <Container className="projects-container min-h-screen">
                 <Row className="projects-row">
                     <Col className="projects-col">
-                        <TrackVisibility>
-                            {({ isVisible }) => 
-                            <div className={isVisible ? "animate_animated animate__fadeIn": ""}>
+                        
+                            <div>
                                 <Tab.Container id="projects-tabs" defaultActiveKey="embedded">
                                     <Nav variant="pills" className="nav-pills mb-3 justify-content-center align-items-center" id="pills-tab">
                                         <Nav.Item>
@@ -83,8 +82,8 @@ export const Projects = () => {
                                         </Tab.Pane>
                                     </Tab.Content>
                                 </Tab.Container>
-                            </div>}
-                        </TrackVisibility>
+                            </div>
+
                     </Col>
                 </Row>
             </Container>
