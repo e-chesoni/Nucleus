@@ -1,6 +1,6 @@
 "use client";
-import { Container, Col, Row } from "react-bootstrap";
-import { ConclusionParagraph } from "./ConclusionParagraph";
+import { Col, Row } from "react-bootstrap";
+import { Paragraph } from "./Paragraph";
 
 export const Conclusion = ({ paragraphs }) => {
     return (
@@ -10,14 +10,15 @@ export const Conclusion = ({ paragraphs }) => {
                     {
                         paragraphs.map((paragraph, index) => {
                             return (
-                                <ConclusionParagraph
+                                <Paragraph
                                     key={index}
-                                    {...paragraph}
+                                    order={paragraph.order}
+                                    text={paragraph.text}
+                                    isConclusion={true}
                                 />
                             )
                         })
                     }
-                    
                 </div>
             </Row>
         </Col>

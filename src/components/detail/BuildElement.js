@@ -1,5 +1,5 @@
 "use client";
-import { Container, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { Paragraph } from "./Paragraph";
 import FadeInOnScrollDefault from '@/components/detail/FadeInOnScrollDefault';
 

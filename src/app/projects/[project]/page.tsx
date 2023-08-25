@@ -226,7 +226,6 @@ export default function Page({ params } : { params: { project: string }}) {
                                             <h2>Conclusion</h2>
                                         </FadeInOnScrollDefault>
                                         </div>
-                                        
                                         {
                                                     project.how.map((how, index) => {
                                                         if (how.section === 'conclusion')

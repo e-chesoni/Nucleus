@@ -15,13 +15,13 @@ export const How = ({ obstacles }) => {
                                 <h4>{obstacle.title}</h4>
                             </FadeInOnScrollDefault>
                             {
-                            obstacle.paragraphs.map((paragraph, index) => {
-                                return (
-                                    <Paragraph
-                                        key={index}
-                                        order={paragraph.order}
-                                        text={paragraph.text}
-                                    />
+                                obstacle.paragraphs.map((paragraph, index) => {
+                                    return (
+                                        <Paragraph
+                                            key={index}
+                                            order={paragraph.order}
+                                            text={paragraph.text}
+                                        />
                                     )
                                 })
                             }
