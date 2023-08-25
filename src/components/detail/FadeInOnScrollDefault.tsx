@@ -66,7 +66,6 @@ const FadeInOnScrollDefault: React.FC<Props> = ({ children, elementName, fadeInT
   }, [isVisible, elementName]);
 
   if (titleRank == 1) {
-    // detail-header-text
     return (
       <div ref={elementRef} className={`fade-in-on-scroll detail-header-text ${isVisible ? 'visible' : 'detail-header-text'}`}>
         {children}
