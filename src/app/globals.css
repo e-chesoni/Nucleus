@@ -90,6 +90,26 @@ body {
   background-color: #051015;
 }
 
+h1 {
+  font-size: 2.369em !important;
+}
+
+h2 {
+  font-size: 1.777em !important;
+}
+
+h3, h4 {
+  font-size: 1.333em !important;
+}
+
+p {
+  font-size: 1em !important;
+}
+
+div.sticky-p, div.sticky-c, div.sticky-mod {
+  font-size: 1em !important;
+}
+
 /************** Nav Bar CSS **************/
 
 nav.navbar.navbar-expand-lg.navbar-light {
@@ -503,8 +523,9 @@ button.project-button.btn.btn-primary {
   min-height: 100vh;
 }
 
+/* Must have a fixed height on mobile screens */
 .detail-canvas {
-  min-height: 30vh;
+  height: 30vh;
 }
 
 .carousel-item {
