@@ -267,6 +267,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0em;
 }
 
+/* Mobile Timeline */
+
 @media screen and (min-width: 300px) {
   .timeline {
     display: grid;
@@ -478,7 +480,7 @@ button.project-button.btn.btn-primary {
 }
 
 .detail-intro-container {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .detail-tldr-container {
@@ -494,35 +496,35 @@ button.project-button.btn.btn-primary {
 /* Container Heights */
 
 .detail-how-intro {
-  height: 30vh;
+  min-height: 30vh;
 }
 
 .detail-carousel-container {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .detail-canvas {
- height: 30vh;
+  min-height: 30vh;
 }
 
 .carousel-item {
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .desc-container {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .mod-container {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .conclusion-container {
-  height: 110vh;
+  min-height: 110vh;
 }
 
 .last-conclusion-container {
-  height: 80vh;
+  min-height: 80vh;
 }
 
 /* Things that Stick */
