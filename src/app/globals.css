@@ -221,12 +221,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 75em;
 }
 
 .timeline-text-container {
   color: #FF5400 !important;
-  padding-left: 10px;
+  padding-left: 0.6em;
 }
 
 .timeline-text {
@@ -234,7 +234,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .timeline-text-text {
-  margin-left: 10;
+  margin-left: 0.6em;
 }
 
 .design-section {
@@ -242,7 +242,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 0em;
 }
 
 .design {
@@ -252,7 +252,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .timeline {
-  width: 80%;
+  width: 80vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -264,13 +264,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .timeline-component {
-  margin: 0px 0px 0px 0px;
+  margin: 0em;
 }
 
 @media screen and (min-width: 300px) {
   .timeline {
     display: grid;
-    grid-template-columns: 1px 1fr;
+    grid-template-columns: 0.0625em 1fr;
   }
   
   .main-middle {
@@ -280,17 +280,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .timeline-middle {
     position: absolute;
     background-image: linear-gradient(45deg, #FF5400, #FF5400, #FF5400);
-    width: 1px;
-    height: 100%;
+    width: 0.0625em;
+    min-height: 100%;
   }
 
   .timeline-circle {
     top: 0;
     left: 50%;
-    width: 10px;
-    height: 10px;
+    width: 0.625em;
+    height: 0.625em;
     border-radius: 50%;
-    border: 2px solid #FF5400;
+    border: 0.125em solid #FF5400;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -299,7 +299,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************** Hero CSS **************/
 
 .hero {
-  padding-left: 10px;
+  padding-left: 0.625em;
 }
 
 .intro {
@@ -326,7 +326,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .develop {
-  letter-spacing: 2px;
+  letter-spacing: 0.125em;
 }
 
 /************** Projects CSS **************/
@@ -352,11 +352,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project-card-col {
   background: #023047;
-  border-radius: 5px;
+  border-radius: 0.3em;
   max-height: 78vh;
   min-height: 78vh;
   width: 90vw;
-  margin-bottom: 80px;
+  margin-bottom: 5em;
 }
 
 .project-card-header-text {
@@ -370,13 +370,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project-card-description-container {
   position: relative;
-  top: -210px;
-  padding: 20px;
+  top: -13.125em;
+  padding: 1.25em;
 }
 
 .project-card-description {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .project-button-container {
@@ -399,12 +399,12 @@ button.project-button.btn.btn-primary {
 .skills-container {
   min-height: 50vh;
   max-height: 50vh;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
 }
 
 .skill-progress-bar-container {
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
 }
 
 .skill-title {
@@ -428,7 +428,7 @@ button.project-button.btn.btn-primary {
 /* Default Text */
 
 .detail-text {
-  padding: 30px 30px 30px 35px;
+  padding: 2em;
   color: #DDDFE1;
   font-size: medium;
 }
@@ -436,25 +436,25 @@ button.project-button.btn.btn-primary {
 /* Accent Bars */
 
 .detail-title-divider {
-  height: 3px;
+  height: 0.2em;
   width: 20vw;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   background-color: #FF5400;
   border-radius: 30%;
 }
 
 .detail-foot-divider {
   width: 90vw;
-  padding-left: 35px;
+  padding-left: 2em;
   position: absolute;
-  bottom: 15px;
+  bottom: 1em;
   position: sticky;
 }
 
 .detail-foot-divider-bar {
-  height: 3px;
+  height: 0.2em;
   width: 80vw;
-  margin-top: 12px;
+  margin-top: 0.75em;
   background-color: #FF5400;
   border-radius: 30%;
 }
@@ -466,7 +466,7 @@ button.project-button.btn.btn-primary {
 }
 
 .detail-foot-divider-id {
-  padding-left: 10px;
+  padding-left: 0.625em;
   width: 10vw;
   color: #FF5400;
 }
@@ -482,13 +482,13 @@ button.project-button.btn.btn-primary {
 }
 
 .detail-tldr-container {
-  padding: 0px 30px 30px 35px;
+  padding: 0em 2em 2em 2em;
   color: #DDDFE1;
   font-size: medium;
 }
 
 .detail-header, .detail-sticky-header {
-  padding: 0px 30px 0px 35px;
+  padding: 0px 2em 0px 2em;
 }
 
 /* Container Heights */
@@ -538,38 +538,38 @@ button.project-button.btn.btn-primary {
 }
 
 .detail-how-sub-header {
-  padding: 30px 30px 30px 0px;
+  padding: 2em 2em 2em 0em;
   position: sticky;
   top: 27vh;
 }
 
 .detail-how-sub-section-header {
-  padding: 30px 30px 30px 0px;
+  padding: 2em 2em 2em 0em;
   position: sticky;
   top: 33vh;
   text-transform: capitalize;
 }
 
 .conclusion-header {
-  padding: 0px 30px 30px 0px;
+  padding: 0em 2em 2em 0em;
   position: sticky;
   top: 6vh;
 }
 
 .sticky-p {
-  padding: 30px 30px 30px 0px;
+  padding: 2em 2em 2em 0em;
   position: sticky;
   top: 42vh;
 }
 
 .sticky-mod {
-  padding: 30px 30px 30px 0px;
+  padding: 2em 2em 2em 0em;
   position: sticky;
   top: 40vh;
 }
 
 .sticky-c {
-  padding: 30px 30px 30px 0px;
+  padding: 2em 2em 2em 0em;
   position: sticky;
   top: 10vh;
 }
@@ -578,7 +578,7 @@ button.project-button.btn.btn-primary {
 
 .fade-in-on-scroll {
   opacity: 0;
-  transform: translateY(-20px);
+  transform: translateY(-1.25em);
   transition: opacity 0.5s, transform 0.5s;
 }
 
